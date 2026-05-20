@@ -6,6 +6,7 @@
 <title>Okinawa Halal Grill</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -14,90 +15,77 @@ font-family:Arial,sans-serif;
 }
 
 body{
-background:#fff8f0;
-color:#222;
+background:#0f0f0f;
+color:white;
+line-height:1.6;
 }
 
 header{
-background:#0b3d2e;
-color:white;
-padding:20px;
+background:#111;
+padding:25px;
 text-align:center;
+border-bottom:3px solid red;
 }
 
 header h1{
-font-size:42px;
+font-size:55px;
+color:#ffcc00;
+}
+
+header p{
+font-size:22px;
+margin-top:10px;
+color:#ddd;
 }
 
 .hero{
-padding:60px 20px;
+padding:100px 20px;
 text-align:center;
-background:#ffe8d6;
+background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+url('https://images.unsplash.com/photo-1561758033-d89a9ad46330?q=80&w=1200');
+background-size:cover;
+background-position:center;
 }
 
 .hero h2{
-font-size:48px;
-color:#b22222;
-margin-bottom:15px;
+font-size:70px;
+color:#ff3300;
+margin-bottom:20px;
 }
 
 .hero p{
-font-size:20px;
-}
-
-.coming{
-background:white;
-padding:30px;
-margin:30px auto;
-max-width:850px;
-border-radius:18px;
-box-shadow:0 5px 20px rgba(0,0,0,0.1);
-text-align:center;
-}
-
-.coming h3{
-font-size:34px;
-margin-bottom:15px;
-color:#0b3d2e;
-}
-
-.coming p{
-font-size:20px;
-margin:10px 0;
-}
-
-.info{
-padding:30px 20px;
-text-align:center;
-background:white;
-}
-
-.info p{
-margin:10px 0;
-font-size:18px;
-}
-
-.whatsapp-btn{
-display:inline-block;
-margin-top:25px;
-background:#25D366;
-color:white;
-padding:16px 28px;
-border-radius:14px;
-text-decoration:none;
-font-size:20px;
-font-weight:bold;
-}
-
-.menu{
-padding:40px 20px;
-}
-
-.menu h2{
-text-align:center;
-font-size:38px;
+font-size:28px;
 margin-bottom:30px;
-color:#0b3d2e;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:red;
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-size:22px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+background:#ff3300;
+transform:scale(1.05);
+}
+
+.section{
+padding:70px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+.section h3{
+text-align:center;
+font-size:45px;
+margin-bottom:40px;
+color:#ffcc00;
 }
 
 .menu-grid{
@@ -107,133 +95,140 @@ gap:25px;
 }
 
 .card{
-background:white;
-border-radius:18px;
-overflow:hidden;
-box-shadow:0 5px 20px rgba(0,0,0,0.1);
-}
-
-.card img{
-width:100%;
-height:220px;
-object-fit:cover;
-}
-
-.card-content{
-padding:20px;
+background:#1a1a1a;
+padding:25px;
+border-radius:15px;
 text-align:center;
+border:2px solid #333;
+transition:.3s;
 }
 
-.card-content h3{
-margin-bottom:10px;
-font-size:24px;
+.card:hover{
+transform:translateY(-10px);
+border-color:red;
 }
 
-.price{
-font-size:20px;
-color:#b22222;
-font-weight:bold;
+.card h4{
+font-size:28px;
+margin-bottom:15px;
+color:#ff3300;
+}
+
+.card p{
+font-size:18px;
+color:#ddd;
 }
 
 .contact{
-background:#0b3d2e;
-color:white;
-padding:40px 20px;
 text-align:center;
+background:#111;
+padding:60px 20px;
+}
+
+.contact h3{
+font-size:40px;
+margin-bottom:20px;
+color:#ffcc00;
+}
+
+.contact p{
+font-size:22px;
+margin-bottom:15px;
 }
 
 footer{
-background:#000;
-color:white;
+background:black;
 text-align:center;
-padding:15px;
-font-size:14px;
+padding:20px;
+font-size:18px;
+color:#aaa;
 }
+
+@media(max-width:768px){
+
+header h1{
+font-size:40px;
+}
+
+.hero h2{
+font-size:45px;
+}
+
+.hero p{
+font-size:22px;
+}
+
+.btn{
+font-size:18px;
+}
+
+}
+
 </style>
 </head>
 
 <body>
 
 <header>
-<h1>🌴 Okinawa Halal Grill</h1>
-<p>100% Halal Food 🕌</p>
+<h1>🍔 Okinawa Halal Grill</h1>
+<p>100% Halal Fast Food in Okinawa</p>
 </header>
 
 <section class="hero">
-<h2>COMING SOON 🔥</h2>
-<p>Grand Opening — June 20th</p>
+<h2>GRAND OPENING 🔥</h2>
+<p>Opening June 30th</p>
+
+<a class="btn" href="https://wa.me/819098504545">Order on WhatsApp</a>
 </section>
 
-<div class="coming">
-<h3>Original Taste Only At Okinawa Halal Grill</h3>
-<p>🍔 Arabian Food • Pakistani Food • Indian Food</p>
-<p>🍗 Burgers • Biryani • Fried Chicken • Much More</p>
-<p>✨ Muslim Friendly Restaurant in Okinawa</p>
+<section class="section">
 
-<a class="whatsapp-btn" href="https://wa.me/818098504545" target="_blank">
-📲 Order Online on WhatsApp
-</a>
-</div>
-
-<section class="info">
-<p><strong>🕙 Open:</strong> 10:00 AM</p>
-<p><strong>🕗 Close:</strong> 8:00 PM</p>
-<p><strong>📍 Address:</strong> Okinawa naka gami gun nakagusuku wauke 625</p>
-<p><strong>📞 Mobile:</strong> 080-9850-4545</p>
-</section>
-
-<section class="menu">
-<h2>🍔 Popular Menu</h2>
+<h3>🔥 Our Menu</h3>
 
 <div class="menu-grid">
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1200&auto=format&fit=crop">
-<div class="card-content">
-<h3>Zinger Burger</h3>
-<p class="price">¥650</p>
-</div>
+<h4>Zinger Burger</h4>
+<p>Original crispy halal burger taste only at Okinawa Halal Grill.</p>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1701579231305-d84d8af9a3fd?q=80&w=1200&auto=format&fit=crop">
-<div class="card-content">
-<h3>Mutton Biryani</h3>
-<p class="price">¥1500</p>
-</div>
+<h4>Broast Chicken</h4>
+<p>Juicy crispy halal broast made with special spices.</p>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1633945274405-b6c8069047b0?q=80&w=1200&auto=format&fit=crop">
-<div class="card-content">
-<h3>Chicken Biryani</h3>
-<p class="price">¥900</p>
-</div>
+<h4>Biryani</h4>
+<p>Authentic Pakistani & Indian halal biryani.</p>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?q=80&w=1200&auto=format&fit=crop">
-<div class="card-content">
-<h3>Spicy Chicken Burger</h3>
-<p class="price">¥700</p>
-</div>
+<h4>Fries & Sides</h4>
+<p>Loaded fries and delicious side items.</p>
 </div>
 
 </div>
+
 </section>
 
 <section class="contact">
-<h2>📲 Contact Us</h2>
-<p>WhatsApp Orders Available</p>
-<p>Fast Service • 100% Halal • Okinawa Japan</p>
 
-<a class="whatsapp-btn" href="https://wa.me/818098504545" target="_blank">
-📞 WhatsApp Order Now
-</a>
+<h3>📍 Visit Us</h3>
+
+<p>Nakagusuku, Okinawa, Japan</p>
+
+<p>📞 080-9850-4545</p>
+
+<p>🕌 100% Halal</p>
+
+<a class="btn" href="https://maps.google.com">Open Google Maps</a>
+
 </section>
 
 <footer>
-© 2026 Okinawa Halal Grill - All Rights Reserved
+
+© 2026 Okinawa Halal Grill — All Rights Reserved
+
 </footer>
 
 </body>
