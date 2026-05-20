@@ -1,458 +1,94 @@
+logo.png
+outside.jpg
+inside.jpg
+chicken-burger.webp
+mutton-biryani.jpg
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Okinawa Halal Grill</title>
-
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
-body{
-background:#000;
-color:white;
-}
-
-header{
-background:#050505;
-padding:20px;
-text-align:center;
-border-bottom:3px solid red;
-}
-
-header h1{
-font-size:55px;
-color:#ffc400;
-}
-
-header p{
-font-size:22px;
-margin-top:10px;
-}
-
-.hero{
-height:90vh;
-background:
-linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),
-url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1400&auto=format&fit=crop');
-background-size:cover;
-background-position:center;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-}
-
-.hero-content h2{
-font-size:75px;
-color:red;
-margin-bottom:20px;
-}
-
-.hero-content p{
-font-size:30px;
-margin-bottom:20px;
-}
-
-.badge{
-display:inline-block;
-padding:12px 25px;
-background:#111;
-border:1px solid gold;
-border-radius:40px;
-color:#ffc400;
-font-weight:bold;
-margin-bottom:30px;
-}
-
-.buttons{
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-}
-
-.btn{
-padding:18px 35px;
-border-radius:15px;
-font-size:22px;
-font-weight:bold;
-text-decoration:none;
-color:white;
-transition:0.3s;
-}
-
-.btn-green{
-background:#25d366;
-}
-
-.btn-red{
-background:red;
-}
-
-.btn-dark{
-background:#222;
-border:1px solid #444;
-}
-
-.btn:hover{
-transform:scale(1.05);
-}
-
-.section{
-padding:70px 20px;
-max-width:1200px;
-margin:auto;
-}
-
-.section h2{
-text-align:center;
-font-size:45px;
-color:#ffc400;
-margin-bottom:20px;
-}
-
-.section p.sub{
-text-align:center;
-color:#ccc;
-margin-bottom:40px;
-font-size:18px;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.card{
-background:#111;
-border-radius:20px;
-overflow:hidden;
-border:1px solid #333;
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-5px);
-border-color:red;
-}
-
-.card img{
-width:100%;
-height:240px;
-object-fit:cover;
-}
-
-.card-content{
-padding:20px;
-text-align:center;
-}
-
-.card-content h3{
-font-size:28px;
-margin-bottom:10px;
-}
-
-.price{
-font-size:26px;
-color:#ffc400;
-font-weight:bold;
-}
-
-.gallery{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:25px;
-}
-
-.gallery img{
-width:100%;
-border-radius:20px;
-height:400px;
-object-fit:cover;
-border:1px solid #333;
-}
-
-.info-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.info-box{
-background:#111;
-padding:25px;
-border-radius:20px;
-border-left:4px solid red;
-}
-
-.info-box h3{
-color:#ffc400;
-margin-bottom:10px;
-}
-
-.map{
-border-radius:20px;
-overflow:hidden;
-border:1px solid #333;
-}
-
-iframe{
-width:100%;
-height:450px;
-border:0;
-}
-
-footer{
-padding:40px 20px;
-text-align:center;
-background:#050505;
-border-top:1px solid #222;
-color:#999;
-}
-
-.float-wa{
-position:fixed;
-bottom:20px;
-left:20px;
-right:20px;
-background:#25d366;
-color:white;
-text-align:center;
-padding:18px;
-border-radius:50px;
-font-size:22px;
-font-weight:bold;
-text-decoration:none;
-z-index:999;
-}
-
-.lang-switch{
-position:fixed;
-right:20px;
-bottom:90px;
-display:flex;
-gap:10px;
-z-index:999;
-}
-
-.lang-switch button{
-padding:10px 15px;
-border-radius:50px;
-border:none;
-font-weight:bold;
-cursor:pointer;
-background:#111;
-color:white;
-border:1px solid #444;
-}
-
-.lang-switch .active{
-background:red;
-}
-
-@media(max-width:768px){
-
-header h1{
-font-size:38px;
-}
-
-.hero-content h2{
-font-size:45px;
-}
-
-.hero-content p{
-font-size:22px;
-}
-
-.gallery{
-grid-template-columns:1fr;
-}
-
-.gallery img{
-height:260px;
-}
-
-.btn{
-width:100%;
-max-width:350px;
-}
-
-}
+body{margin:0;background:#050505;color:white;font-family:Arial,sans-serif}
+header{text-align:center;padding:25px;background:#080808;border-bottom:3px solid red}
+.logo{width:120px}
+h1{color:#ffc400;font-size:52px}
+.hero{padding:90px 20px;text-align:center;background:#000}
+.hero h2{font-size:64px;color:#ff2020}
+.badge{display:inline-block;border:1px solid #ffc400;color:#ffc400;padding:12px 25px;border-radius:40px}
+.btn{display:inline-block;margin:10px;padding:16px 30px;border-radius:15px;color:white;text-decoration:none;font-size:22px;font-weight:bold}
+.green{background:#25d366}.red{background:red}.dark{background:#222}
+section{padding:70px 20px;max-width:1200px;margin:auto}
+h2{text-align:center;color:#ffc400;font-size:42px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
+.card{background:#111;border-radius:22px;overflow:hidden;text-align:center;border:1px solid #333}
+.card img{width:100%;height:240px;object-fit:cover}
+.card h3{font-size:26px}.price{color:#ffc400;font-size:24px;font-weight:bold}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.gallery img{width:100%;height:420px;object-fit:cover;border-radius:22px}
+iframe{width:100%;height:420px;border:0;border-radius:22px}
+footer{text-align:center;padding:35px;background:#000;color:#aaa}
+.float{position:fixed;left:18px;right:18px;bottom:18px;background:#25d366;padding:16px;border-radius:50px;text-align:center;font-size:22px;font-weight:bold;text-decoration:none;color:white}
+@media(max-width:768px){h1{font-size:34px}.hero h2{font-size:42px}.gallery{grid-template-columns:1fr}.gallery img{height:260px}}
 </style>
-
 </head>
 <body>
 
-<div class="lang-switch">
-<button class="active">EN</button>
-<button>日本語</button>
-</div>
-
 <header>
-<h1>🍔 Okinawa Halal Grill</h1>
+<img class="logo" src="logo.png">
+<h1>Okinawa Halal Grill</h1>
 <p>100% Halal Fast Food in Okinawa</p>
 </header>
 
-<section class="hero">
-<div class="hero-content">
+<div class="hero">
 <h2>GRAND OPENING 🔥</h2>
-
 <p>Opening June 30th</p>
-
-<div class="badge">
-🚧 Website Under Construction
+<div class="badge">🚧 Website Under Construction</div><br><br>
+<a class="btn green" href="https://wa.me/818098504545">Order on WhatsApp</a>
+<a class="btn red" href="#menu">View Menu</a>
+<a class="btn dark" href="#map">Google Map</a>
 </div>
 
-<div class="buttons">
-
-<a href="https://wa.me/818098504545" class="btn btn-green">
-Order on WhatsApp
-</a>
-
-<a href="#menu" class="btn btn-red">
-View Menu
-</a>
-
-<a href="#map" class="btn btn-dark">
-Google Map
-</a>
-
-</div>
-</div>
-</section>
-
-<section class="section" id="menu">
-
+<section id="menu">
 <h2>🔥 Temporary Menu</h2>
-
-<p class="sub">
-Real menu photos coming soon.
-</p>
-
 <div class="grid">
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1200&auto=format&fit=crop">
-<div class="card-content">
-<h3>Zinger Burger</h3>
-<div class="price">¥650</div>
-</div>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1615297928064-24977384d0da?q=80&w=1200&auto=format&fit=crop">
-<div class="card-content">
-<h3>Chicken Burger</h3>
-<div class="price">¥700</div>
-</div>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1701579231305-d84d8af9a3fd?q=80&w=1200&auto=format&fit=crop">
-<div class="card-content">
-<h3>Mutton Biryani</h3>
-<div class="price">¥1500</div>
-</div>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?q=80&w=1200&auto=format&fit=crop">
-<div class="card-content">
-<h3>Chicken Biryani</h3>
-<div class="price">¥1000</div>
-</div>
-</div>
-
+<div class="card"><img src="chicken-burger.webp"><h3>Chicken Burger</h3><div class="price">¥700</div></div>
+<div class="card"><img src="mutton-biryani.jpg"><h3>Mutton Biryani</h3><div class="price">¥1500</div></div>
+<div class="card"><img src="inside.jpg"><h3>Broast Chicken</h3><div class="price">¥450〜</div></div>
+<div class="card"><img src="outside.jpg"><h3>Takeout</h3><div class="price">Available</div></div>
 </div>
 </section>
 
-<section class="section">
-
+<section>
 <h2>📸 Okinawa Halal Grill</h2>
-
-<p class="sub">
-Inside and outside preview photos
-</p>
-
 <div class="gallery">
-
-<img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=1200&auto=format&fit=crop">
-
-<img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop">
-
+<img src="outside.jpg">
+<img src="inside.jpg">
 </div>
-
 </section>
 
-<section class="section">
-
+<section>
 <h2>ℹ️ Information</h2>
-
-<div class="info-grid">
-
-<div class="info-box">
-<h3>Grand Opening</h3>
-<p>June 30th. Final preparation in progress.</p>
-</div>
-
-<div class="info-box">
-<h3>Opening Hours</h3>
-<p>10:00 AM - 8:00 PM</p>
-</div>
-
-<div class="info-box">
-<h3>Service</h3>
-<p>Takeout Available</p>
-</div>
-
-<div class="info-box">
-<h3>Phone</h3>
-<p>080-9850-4545</p>
-</div>
-
-</div>
-
+<p style="text-align:center;font-size:22px">
+Grand Opening: June 30th<br>
+Hours: 10:00 AM – 8:00 PM<br>
+Takeout Available<br>
+Phone: 080-9850-4545
+</p>
 </section>
 
-<section class="section" id="map">
-
+<section id="map">
 <h2>📍 Google Map</h2>
-
-<p class="sub">
-〒901-2416 沖縄県中頭郡中城村和宇慶633-2
-</p>
-
-<div class="map">
-
-<iframe
-src="https://www.google.com/maps?q=Okinawa%20Halal%20Grill%20Nakagusuku%20Okinawa&output=embed">
-</iframe>
-
-</div>
-
+<iframe src="https://www.google.com/maps?q=Okinawa%20Halal%20Grill%20Nakagusuku%20Okinawa&output=embed"></iframe>
 </section>
 
 <footer>
-
-<p>© 2026 Okinawa Halal Grill</p>
-
-<p>
+© 2026 Okinawa Halal Grill<br>
 100% Halal Fast Food in Okinawa
-</p>
-
 </footer>
 
-<a href="https://wa.me/818098504545" class="float-wa">
-📲 WhatsApp Order
-</a>
+<a class="float" href="https://wa.me/818098504545">📲 WhatsApp Order</a>
 
 </body>
 </html>
