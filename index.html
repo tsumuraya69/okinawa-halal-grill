@@ -1,104 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-<title>Okinawa Halal Grill | 100% Halal Fast Food in Okinawa</title>
-
-<meta name="description" content="Okinawa Halal Grill is a 100% halal fast food takeaway in Okinawa. Grand opening June 30th. Burgers, biryani, broast and more." />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Okinawa Halal Grill</title>
 
 <style>
-
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:Arial,sans-serif;
-scroll-behavior:smooth;
 }
 
 body{
-background:#050505;
+background:#000;
 color:white;
 }
 
 header{
-background:#000;
+background:#050505;
 padding:20px;
 text-align:center;
 border-bottom:3px solid red;
 }
 
-header img{
-width:130px;
-margin-bottom:10px;
-}
-
 header h1{
 font-size:55px;
-color:#ffcc00;
+color:#ffc400;
 }
 
 header p{
-font-size:24px;
+font-size:22px;
 margin-top:10px;
 }
 
 .hero{
 height:90vh;
+background:
+linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),
+url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1400&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
 padding:20px;
-
-background:
-linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.8)),
-url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1400');
-
-background-size:cover;
-background-position:center;
 }
 
-.hero h2{
-font-size:80px;
-color:#ff2a00;
-text-shadow:0 0 30px red;
+.hero-content h2{
+font-size:75px;
+color:red;
+margin-bottom:20px;
 }
 
-.hero p{
+.hero-content p{
 font-size:30px;
-margin-top:20px;
+margin-bottom:20px;
 }
 
-.btns{
-margin-top:40px;
+.badge{
+display:inline-block;
+padding:12px 25px;
+background:#111;
+border:1px solid gold;
+border-radius:40px;
+color:#ffc400;
+font-weight:bold;
+margin-bottom:30px;
+}
+
+.buttons{
 display:flex;
-gap:20px;
 justify-content:center;
+gap:20px;
 flex-wrap:wrap;
 }
 
 .btn{
 padding:18px 35px;
-border-radius:16px;
-font-size:24px;
+border-radius:15px;
+font-size:22px;
 font-weight:bold;
 text-decoration:none;
 color:white;
 transition:0.3s;
 }
 
-.green{
+.btn-green{
 background:#25d366;
 }
 
-.red{
-background:#ff2020;
+.btn-red{
+background:red;
 }
 
-.dark{
+.btn-dark{
 background:#222;
 border:1px solid #444;
 }
@@ -107,46 +105,24 @@ border:1px solid #444;
 transform:scale(1.05);
 }
 
-.notice{
-max-width:1100px;
-margin:auto;
-margin-top:-50px;
-background:#111;
-padding:35px;
-border-radius:25px;
-border:1px solid #333;
-text-align:center;
-}
-
-.notice h3{
-font-size:40px;
-color:#ffcc00;
-margin-bottom:15px;
-}
-
-.notice p{
-font-size:22px;
-color:#ddd;
-}
-
 .section{
-padding:80px 20px;
+padding:70px 20px;
 max-width:1200px;
 margin:auto;
 }
 
 .section h2{
-font-size:50px;
 text-align:center;
-margin-bottom:15px;
-color:#ffcc00;
+font-size:45px;
+color:#ffc400;
+margin-bottom:20px;
 }
 
-.section p{
+.section p.sub{
 text-align:center;
-margin-bottom:40px;
-font-size:20px;
 color:#ccc;
+margin-bottom:40px;
+font-size:18px;
 }
 
 .grid{
@@ -164,29 +140,29 @@ transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-8px);
+transform:translateY(-5px);
 border-color:red;
 }
 
 .card img{
 width:100%;
-height:220px;
+height:240px;
 object-fit:cover;
 }
 
-.card-body{
+.card-content{
 padding:20px;
 text-align:center;
 }
 
-.card-body h3{
+.card-content h3{
 font-size:28px;
 margin-bottom:10px;
 }
 
 .price{
-color:#ffcc00;
-font-size:24px;
+font-size:26px;
+color:#ffc400;
 font-weight:bold;
 }
 
@@ -198,44 +174,67 @@ gap:25px;
 
 .gallery img{
 width:100%;
-border-radius:25px;
+border-radius:20px;
 height:400px;
 object-fit:cover;
 border:1px solid #333;
 }
 
+.info-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.info-box{
+background:#111;
+padding:25px;
+border-radius:20px;
+border-left:4px solid red;
+}
+
+.info-box h3{
+color:#ffc400;
+margin-bottom:10px;
+}
+
 .map{
-margin-top:40px;
-border-radius:25px;
+border-radius:20px;
 overflow:hidden;
 border:1px solid #333;
 }
 
-footer{
-background:#000;
-padding:40px;
-text-align:center;
-margin-top:60px;
-border-top:1px solid #222;
+iframe{
+width:100%;
+height:450px;
+border:0;
 }
 
-.float{
+footer{
+padding:40px 20px;
+text-align:center;
+background:#050505;
+border-top:1px solid #222;
+color:#999;
+}
+
+.float-wa{
 position:fixed;
+bottom:20px;
 left:20px;
 right:20px;
-bottom:20px;
 background:#25d366;
-padding:18px;
+color:white;
 text-align:center;
-border-radius:100px;
-font-size:24px;
+padding:18px;
+border-radius:50px;
+font-size:22px;
 font-weight:bold;
 text-decoration:none;
-color:white;
 z-index:999;
 }
 
-.lang{
+.lang-switch{
 position:fixed;
 right:20px;
 bottom:90px;
@@ -244,18 +243,19 @@ gap:10px;
 z-index:999;
 }
 
-.lang button{
-padding:10px 18px;
+.lang-switch button{
+padding:10px 15px;
+border-radius:50px;
 border:none;
-border-radius:100px;
-background:#111;
-color:white;
 font-weight:bold;
 cursor:pointer;
+background:#111;
+color:white;
+border:1px solid #444;
 }
 
-.active{
-background:red !important;
+.lang-switch .active{
+background:red;
 }
 
 @media(max-width:768px){
@@ -264,11 +264,11 @@ header h1{
 font-size:38px;
 }
 
-.hero h2{
+.hero-content h2{
 font-size:45px;
 }
 
-.hero p{
+.hero-content p{
 font-size:22px;
 }
 
@@ -277,162 +277,116 @@ grid-template-columns:1fr;
 }
 
 .gallery img{
-height:250px;
+height:260px;
+}
+
+.btn{
+width:100%;
+max-width:350px;
 }
 
 }
-
 </style>
-</head>
 
+</head>
 <body>
 
-<div class="lang">
+<div class="lang-switch">
 <button class="active">EN</button>
 <button>日本語</button>
 </div>
 
 <header>
-
-<img src="https://i.imgur.com/eR4J2Y7.png">
-
-<h1>Okinawa Halal Grill</h1>
-
+<h1>🍔 Okinawa Halal Grill</h1>
 <p>100% Halal Fast Food in Okinawa</p>
-
 </header>
 
 <section class="hero">
-
-<div>
-
+<div class="hero-content">
 <h2>GRAND OPENING 🔥</h2>
 
 <p>Opening June 30th</p>
 
-<div class="btns">
+<div class="badge">
+🚧 Website Under Construction
+</div>
 
-<a href="https://wa.me/818098504545" class="btn green">
+<div class="buttons">
+
+<a href="https://wa.me/818098504545" class="btn btn-green">
 Order on WhatsApp
 </a>
 
-<a href="#menu" class="btn red">
+<a href="#menu" class="btn btn-red">
 View Menu
 </a>
 
-<a href="#map" class="btn dark">
+<a href="#map" class="btn btn-dark">
 Google Map
 </a>
 
 </div>
-
 </div>
-
 </section>
-
-<div class="notice">
-
-<h3>
-🚧 Website Under Construction
-</h3>
-
-<p>
-Full menu photos and more updates coming soon.
-</p>
-
-</div>
 
 <section class="section" id="menu">
 
 <h2>🔥 Temporary Menu</h2>
 
-<p>
-Real food photos will be added later.
+<p class="sub">
+Real menu photos coming soon.
 </p>
 
 <div class="grid">
 
 <div class="card">
-
-<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1200">
-
-<div class="card-body">
-
+<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
 <h3>Zinger Burger</h3>
-
-<div class="price">
-¥650
+<div class="price">¥650</div>
 </div>
-
-</div>
-
 </div>
 
 <div class="card">
-
-<img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?q=80&w=1200">
-
-<div class="card-body">
-
+<img src="https://images.unsplash.com/photo-1615297928064-24977384d0da?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
 <h3>Chicken Burger</h3>
-
-<div class="price">
-¥700
+<div class="price">¥700</div>
 </div>
-
-</div>
-
 </div>
 
 <div class="card">
-
-<img src="https://images.unsplash.com/photo-1701579231378-3723fafd17b3?q=80&w=1200">
-
-<div class="card-body">
-
+<img src="https://images.unsplash.com/photo-1701579231305-d84d8af9a3fd?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
 <h3>Mutton Biryani</h3>
-
-<div class="price">
-¥1500
+<div class="price">¥1500</div>
 </div>
-
-</div>
-
 </div>
 
 <div class="card">
-
-<img src="https://images.unsplash.com/photo-1633945274405-b6c8069047b0?q=80&w=1200">
-
-<div class="card-body">
-
+<img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
 <h3>Chicken Biryani</h3>
-
-<div class="price">
-¥1000
+<div class="price">¥1000</div>
+</div>
 </div>
 
 </div>
-
-</div>
-
-</div>
-
 </section>
 
 <section class="section">
 
 <h2>📸 Okinawa Halal Grill</h2>
 
-<p>
-Inside and outside preview photos.
+<p class="sub">
+Inside and outside preview photos
 </p>
 
 <div class="gallery">
 
-<img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=1400">
+<img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=1200&auto=format&fit=crop">
 
-<img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1400">
+<img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop">
 
 </div>
 
@@ -440,21 +394,46 @@ Inside and outside preview photos.
 
 <section class="section">
 
+<h2>ℹ️ Information</h2>
+
+<div class="info-grid">
+
+<div class="info-box">
+<h3>Grand Opening</h3>
+<p>June 30th. Final preparation in progress.</p>
+</div>
+
+<div class="info-box">
+<h3>Opening Hours</h3>
+<p>10:00 AM - 8:00 PM</p>
+</div>
+
+<div class="info-box">
+<h3>Service</h3>
+<p>Takeout Available</p>
+</div>
+
+<div class="info-box">
+<h3>Phone</h3>
+<p>080-9850-4545</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="map">
+
 <h2>📍 Google Map</h2>
 
-<p>
+<p class="sub">
 〒901-2416 沖縄県中頭郡中城村和宇慶633-2
 </p>
 
-<div class="map" id="map">
+<div class="map">
 
 <iframe
-src="https://www.google.com/maps?q=Okinawa%20Halal%20Grill%20Nakagusuku%20Okinawa&output=embed"
-width="100%"
-height="450"
-style="border:0;"
-allowfullscreen=""
-loading="lazy">
+src="https://www.google.com/maps?q=Okinawa%20Halal%20Grill%20Nakagusuku%20Okinawa&output=embed">
 </iframe>
 
 </div>
@@ -463,9 +442,7 @@ loading="lazy">
 
 <footer>
 
-<p>
-© 2026 Okinawa Halal Grill
-</p>
+<p>© 2026 Okinawa Halal Grill</p>
 
 <p>
 100% Halal Fast Food in Okinawa
@@ -473,11 +450,8 @@ loading="lazy">
 
 </footer>
 
-<a class="float"
-href="https://wa.me/818098504545">
-
+<a href="https://wa.me/818098504545" class="float-wa">
 📲 WhatsApp Order
-
 </a>
 
 </body>
