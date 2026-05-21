@@ -217,6 +217,69 @@ footer{
   margin-top:50px;
 }
 
+/* CHAT SYSTEM */
+
+#chatButton{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25d366;
+  color:white;
+  border:none;
+  padding:15px 22px;
+  border-radius:50px;
+  font-size:18px;
+  font-weight:bold;
+  cursor:pointer;
+  z-index:9999;
+}
+
+#chatBox{
+  display:none;
+  position:fixed;
+  bottom:85px;
+  right:20px;
+  width:320px;
+  background:#111;
+  color:white;
+  border:2px solid #d4af37;
+  border-radius:15px;
+  overflow:hidden;
+  z-index:9999;
+}
+
+#chatHeader{
+  background:#d4af37;
+  color:#000;
+  padding:12px;
+  font-weight:bold;
+  text-align:center;
+}
+
+#chatMessages{
+  height:220px;
+  overflow-y:auto;
+  padding:12px;
+  font-size:14px;
+}
+
+#chatInput{
+  width:100%;
+  padding:12px;
+  border:none;
+  outline:none;
+}
+
+#chatBox button{
+  width:100%;
+  padding:12px;
+  background:#25d366;
+  color:white;
+  border:none;
+  font-weight:bold;
+  cursor:pointer;
+}
+
 @media(max-width:600px){
 
 .hero h2{
@@ -237,6 +300,11 @@ footer{
   display:block;
   width:90%;
   margin:12px auto;
+}
+
+#chatBox{
+  width:90%;
+  right:5%;
 }
 
 }
@@ -416,29 +484,6 @@ alt="WhatsApp QR Code">
 
 </div>
 
-<div style="text-align:center; margin-top:60px;">
-
-<h3 style="color:#06c755; margin-bottom:20px; font-size:30px;">
-💬 LINE QR Code Coming Soon
-</h3>
-
-<div style="
-display:inline-block;
-padding:50px 40px;
-border:3px dashed #06c755;
-border-radius:20px;
-color:#06c755;
-font-size:22px;
-font-weight:bold;
-">
-
-LINE BOT CONNECT SYSTEM<br>
-UNDER CONSTRUCTION
-
-</div>
-
-</div>
-
 </section>
 
 <section>
@@ -477,6 +522,84 @@ allowfullscreen>
 All Rights Reserved.
 
 </footer>
+
+<!-- AI CHAT SYSTEM -->
+
+<div id="chatBox">
+
+<div id="chatHeader">
+💬 Okinawa Halal Grill AI
+</div>
+
+<div id="chatMessages">
+<p><b>AI:</b> Hello! What would you like to order?</p>
+</div>
+
+<input id="chatInput" type="text" placeholder="Type your message..." />
+
+<button onclick="sendChat()">
+Send
+</button>
+
+</div>
+
+<button id="chatButton" onclick="toggleChat()">
+💬 Chat
+</button>
+
+<script>
+
+function toggleChat(){
+
+const box=document.getElementById("chatBox");
+
+box.style.display =
+box.style.display==="block" ? "none" : "block";
+
+}
+
+function sendChat(){
+
+const input=document.getElementById("chatInput");
+
+const messages=document.getElementById("chatMessages");
+
+const text=input.value.trim();
+
+if(!text) return;
+
+messages.innerHTML +=
+`<p><b>You:</b> ${text}</p>`;
+
+let reply =
+"Thank you! Please send your order on WhatsApp for confirmation.";
+
+if(text.toLowerCase().includes("menu")){
+reply =
+"Our menu includes burgers, broast chicken, biryani, pulao, potato and cola.";
+}
+
+if(text.toLowerCase().includes("order")){
+reply =
+"Please tell us item name and quantity, or use the WhatsApp order button.";
+}
+
+if(text.toLowerCase().includes("open")){
+reply =
+"Opening June 30. Website is under construction.";
+}
+
+messages.innerHTML +=
+`<p><b>AI:</b> ${reply}</p>`;
+
+input.value="";
+
+messages.scrollTop =
+messages.scrollHeight;
+
+}
+
+</script>
 
 </body>
 </html>
