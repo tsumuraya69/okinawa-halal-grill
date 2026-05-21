@@ -195,6 +195,32 @@ section{max-width:1200px;margin:auto;padding:60px 20px;}
   color:#fff;
 }
 
+.progress-bar{
+  width:100%;
+  height:20px;
+  background:#333;
+  border-radius:30px;
+  overflow:hidden;
+  margin-top:20px;
+}
+
+#progressFill{
+  height:100%;
+  width:25%;
+  background:#25d366;
+  transition:1s;
+}
+
+#progressSteps{
+  display:flex;
+  justify-content:space-between;
+  gap:8px;
+  font-size:14px;
+  margin-top:10px;
+  color:#d4af37;
+  flex-wrap:wrap;
+}
+
 .qr-image{
   width:300px;
   max-width:90%;
@@ -395,6 +421,20 @@ footer{
 <input type="text" id="trackPhone" placeholder="Enter Your Phone Number">
 <button onclick="trackOrder()">Track Order</button>
 <div id="trackingResult"></div>
+
+<div id="progressContainer" style="display:none; margin-top:30px;">
+  <div class="progress-bar">
+    <div id="progressFill"></div>
+  </div>
+
+  <div id="progressSteps">
+    <span>✅ Received</span>
+    <span>👨‍🍳 Preparing</span>
+    <span>🛵 On The Way</span>
+    <span>📦 Delivered</span>
+  </div>
+</div>
+
 </div>
 </section>
 
@@ -501,13 +541,17 @@ function sendDeliveryOrder(){
 async function trackOrder(){
   const phone=document.getElementById("trackPhone").value;
   const result=document.getElementById("trackingResult");
+  const progressContainer=document.getElementById("progressContainer");
+  const progress=document.getElementById("progressFill");
 
   if(!phone){
     result.innerHTML="❌ Please enter phone number.";
+    progressContainer.style.display="none";
     return;
   }
 
   result.innerHTML="⏳ Checking your order...";
+  progressContainer.style.display="none";
 
   try{
     const response=await fetch("https://n8n.sakurajapanbot.tech/webhook/track-order",{
@@ -521,7 +565,22 @@ async function trackOrder(){
 
     if(!order || !order.order_id){
       result.innerHTML="❌ Order not found.";
+      progressContainer.style.display="none";
       return;
+    }
+
+    progressContainer.style.display="block";
+
+    if(order.status==="Preparing"){
+      progress.style.width="25%";
+    }else if(order.status==="Ready"){
+      progress.style.width="50%";
+    }else if(order.status==="On The Way"){
+      progress.style.width="75%";
+    }else if(order.status==="Delivered"){
+      progress.style.width="100%";
+    }else{
+      progress.style.width="25%";
     }
 
     result.innerHTML=`
@@ -537,6 +596,7 @@ async function trackOrder(){
     `;
   }catch(error){
     result.innerHTML="❌ Order not found or tracking system is not ready.";
+    progressContainer.style.display="none";
   }
 }
 </script>
