@@ -1,267 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Okinawa Halal Grill</title>
+<section>
+  <h2 class="section-title">Menu</h2>
 
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+  <div class="menu-grid">
 
-    body {
-      font-family: Arial, sans-serif;
-      background: #080808;
-      color: #fff;
-      line-height: 1.6;
-    }
+    <div class="card">
+      <img src="zinger-burger.png" alt="Zinger Burger">
+      <h3>Zinger Burger</h3>
+      <p class="price">¥650</p>
+    </div>
 
-    header {
-      background: #111;
-      text-align: center;
-      padding: 25px 15px;
-      border-bottom: 2px solid #d4af37;
-    }
+    <div class="card">
+      <img src="chicken-burger.png" alt="Chicken Burger">
+      <h3>Chicken Burger</h3>
+      <p class="price">¥500</p>
+    </div>
 
-    header img {
-      width: 130px;
-      height: auto;
-      margin-bottom: 10px;
-    }
+    <div class="card">
+      <img src="double-burger.png" alt="Double Burger">
+      <h3>Double Burger</h3>
+      <p class="price">¥800</p>
+    </div>
 
-    header h1 {
-      color: #d4af37;
-      font-size: 34px;
-    }
+    <div class="card">
+      <img src="broast-3pc.png" alt="Broast Chicken">
+      <h3>Broast Chicken</h3>
+      <p class="price">¥450 / ¥850 / ¥1500</p>
+    </div>
 
-    header p { color: #ccc; }
+    <div class="card">
+      <img src="chicken-biryani.png" alt="Chicken Biryani">
+      <h3>Chicken Biryani</h3>
+      <p class="price">¥1000</p>
+    </div>
 
-    .hero {
-      text-align: center;
-      padding: 55px 20px;
-      background: linear-gradient(135deg, #111, #1c1c1c);
-    }
+    <div class="card">
+      <img src="chicken-pulao.png" alt="Chicken Pulao">
+      <h3>Chicken Pulao</h3>
+      <p class="price">¥900</p>
+    </div>
 
-    .badge {
-      display: inline-block;
-      background: #d4af37;
-      color: #000;
-      padding: 8px 18px;
-      border-radius: 30px;
-      font-weight: bold;
-      margin-bottom: 15px;
-    }
+    <div class="card">
+      <img src="mutton-biryani.png" alt="Mutton Biryani">
+      <h3>Mutton Biryani</h3>
+      <p class="price">¥1300</p>
+    </div>
 
-    .hero h2 {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
+    <div class="card">
+      <img src="potato.png" alt="Potato">
+      <h3>Potato</h3>
+      <p class="price">¥250</p>
+    </div>
 
-    .hero p {
-      max-width: 700px;
-      margin: auto;
-      color: #ddd;
-    }
+    <div class="card">
+      <img src="cola.png" alt="Cola">
+      <h3>Cola</h3>
+      <p class="price">¥200</p>
+    </div>
 
-    .whatsapp {
-      display: inline-block;
-      margin-top: 22px;
-      background: #25d366;
-      color: #fff;
-      text-decoration: none;
-      padding: 14px 24px;
-      border-radius: 8px;
-      font-weight: bold;
-    }
-
-    section {
-      max-width: 1150px;
-      margin: auto;
-      padding: 45px 20px;
-    }
-
-    .section-title {
-      text-align: center;
-      color: #d4af37;
-      font-size: 30px;
-      margin-bottom: 25px;
-    }
-
-    .menu-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: #151515;
-      border: 1px solid #333;
-      border-radius: 14px;
-      padding: 18px;
-      text-align: center;
-    }
-
-    .card img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      border-radius: 12px;
-      margin-bottom: 15px;
-      background: #222;
-    }
-
-    .card h3 {
-      color: #d4af37;
-      font-size: 21px;
-      margin-bottom: 8px;
-    }
-
-    .price {
-      color: #fff;
-      font-size: 20px;
-      font-weight: bold;
-    }
-
-    .photos {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 18px;
-    }
-
-    .photos img {
-      width: 100%;
-      height: 280px;
-      object-fit: cover;
-      border-radius: 14px;
-      border: 1px solid #333;
-    }
-
-    iframe {
-      width: 100%;
-      height: 350px;
-      border: 0;
-      border-radius: 14px;
-    }
-
-    footer {
-      text-align: center;
-      background: #111;
-      color: #aaa;
-      padding: 25px;
-      border-top: 1px solid #333;
-    }
-
-    @media (max-width: 600px) {
-      header h1 { font-size: 28px; }
-      .hero h2 { font-size: 30px; }
-      .card img { height: 200px; }
-    }
-  </style>
-</head>
-
-<body>
-
-  <header>
-    <img src="logo.png" alt="Okinawa Halal Grill Logo">
-    <h1>Okinawa Halal Grill</h1>
-    <p>Halal Fast Food Takeout in Okinawa</p>
-  </header>
-
-  <div class="hero">
-    <div class="badge">Website Under Construction</div>
-    <h2>Opening June 30</h2>
-    <p>Fresh halal burgers, broast chicken, biryani, pulao and drinks. Real menu photos will be updated soon.</p>
-    <a class="whatsapp" href="https://wa.me/" target="_blank">Order on WhatsApp</a>
   </div>
-
-  <section>
-    <h2 class="section-title">Menu</h2>
-
-    <div class="menu-grid">
-
-      <div class="card">
-        <img src="zinger-burger.png" alt="Zinger Burger">
-        <h3>Zinger Burger</h3>
-        <p class="price">¥650</p>
-      </div>
-
-      <div class="card">
-        <img src="chicken-burger.png" alt="Chicken Burger">
-        <h3>Chicken Burger</h3>
-        <p class="price">¥500</p>
-      </div>
-
-      <div class="card">
-        <img src="double-burger.png" alt="Double Burger">
-        <h3>Double Burger</h3>
-        <p class="price">¥800</p>
-      </div>
-
-      <div class="card">
-        <img src="broast-1pc.png" alt="Broast 1pc">
-        <h3>Broast 1pc</h3>
-        <p class="price">¥450</p>
-      </div>
-
-      <div class="card">
-        <img src="broast-2pc.png" alt="Broast 2pc">
-        <h3>Broast 2pc</h3>
-        <p class="price">¥850</p>
-      </div>
-
-      <div class="card">
-        <img src="broast-4pc.png" alt="Broast 4pc">
-        <h3>Broast 4pc</h3>
-        <p class="price">¥1500</p>
-      </div>
-
-      <div class="card">
-        <img src="chicken-biryani.png" alt="Chicken Biryani">
-        <h3>Chicken Biryani</h3>
-        <p class="price">¥1000</p>
-      </div>
-
-      <div class="card">
-        <img src="chicken-pulao.png" alt="Chicken Pulao">
-        <h3>Chicken Pulao</h3>
-        <p class="price">¥900</p>
-      </div>
-
-      <div class="card">
-        <img src="mutton-biryani.png" alt="Mutton Biryani">
-        <h3>Mutton Biryani</h3>
-        <p class="price">¥1300</p>
-      </div>
-
-      <div class="card">
-        <img src="cola.png" alt="Cola">
-        <h3>Cola</h3>
-        <p class="price">¥200</p>
-      </div>
-
-    </div>
-  </section>
-
-  <section>
-    <h2 class="section-title">Shop Photos</h2>
-
-    <div class="photos">
-      <img src="outside.png" alt="Okinawa Halal Grill Outside">
-      <img src="inside.png" alt="Okinawa Halal Grill Inside">
-    </div>
-  </section>
-
-  <section>
-    <h2 class="section-title">Location</h2>
-    <iframe
-      src="https://www.google.com/maps?q=Okinawa%20Halal%20Grill&output=embed"
-      loading="lazy"
-      allowfullscreen>
-    </iframe>
-  </section>
-
-  <footer>
-    <p>© 2026 Okinawa Halal Grill. All Rights Reserved.</p>
-  </footer>
-
-</body>
-</html>
+</section>
