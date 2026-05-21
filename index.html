@@ -6,12 +6,7 @@
 <title>Okinawa Halal Grill</title>
 
 <style>
-
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
+*{margin:0;padding:0;box-sizing:border-box;}
 
 body{
   font-family:Arial,sans-serif;
@@ -20,8 +15,6 @@ body{
   line-height:1.6;
 }
 
-/* HEADER */
-
 header{
   background:#111;
   text-align:center;
@@ -29,21 +22,10 @@ header{
   border-bottom:2px solid #d4af37;
 }
 
-header img{
-  width:120px;
-  margin-bottom:10px;
-}
+header img{width:120px;margin-bottom:10px;}
 
-header h1{
-  color:#d4af37;
-  font-size:38px;
-}
-
-header p{
-  color:#ccc;
-}
-
-/* HERO */
+header h1{color:#d4af37;font-size:38px;}
+header p{color:#ccc;}
 
 .hero{
   text-align:center;
@@ -61,16 +43,8 @@ header p{
   margin-bottom:15px;
 }
 
-.hero h2{
-  font-size:42px;
-  margin-bottom:10px;
-}
-
-.hero p{
-  max-width:700px;
-  margin:auto;
-  color:#ddd;
-}
+.hero h2{font-size:42px;margin-bottom:10px;}
+.hero p{max-width:700px;margin:auto;color:#ddd;}
 
 .whatsapp-btn,
 .whatsapp-order-btn{
@@ -85,8 +59,6 @@ header p{
   margin:10px;
 }
 
-/* SECTIONS */
-
 section{
   max-width:1200px;
   margin:auto;
@@ -99,8 +71,6 @@ section{
   font-size:42px;
   margin-bottom:30px;
 }
-
-/* MENU */
 
 .menu-grid{
   display:grid;
@@ -115,7 +85,6 @@ section{
   overflow:hidden;
   text-align:center;
   transition:0.4s;
-  position:relative;
 }
 
 .card:hover{
@@ -135,11 +104,7 @@ section{
   transform:rotate(360deg) scale(1.08);
 }
 
-.card h3{
-  color:#d4af37;
-  margin-top:15px;
-  font-size:22px;
-}
+.card h3{color:#d4af37;margin-top:15px;font-size:22px;}
 
 .price{
   font-size:20px;
@@ -147,12 +112,7 @@ section{
   padding:12px 0 20px;
 }
 
-/* COMBO BUTTONS */
-
-.combo-buttons{
-  text-align:center;
-  margin-top:35px;
-}
+.combo-buttons{text-align:center;margin-top:35px;}
 
 .combo-btn{
   display:inline-block;
@@ -184,35 +144,6 @@ section{
   font-weight:bold;
   font-size:18px;
 }
-
-/* QR */
-
-.qr-image{
-  width:280px;
-  max-width:90%;
-  border-radius:20px;
-  border:4px solid #25d366;
-  background:white;
-  padding:10px;
-}
-
-/* SHOP PHOTOS */
-
-.photos{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-  gap:20px;
-}
-
-.photos img{
-  width:100%;
-  height:320px;
-  object-fit:cover;
-  border-radius:18px;
-  border:1px solid #333;
-}
-
-/* DELIVERY FORM */
 
 .delivery-form{
   max-width:650px;
@@ -246,7 +177,28 @@ section{
   cursor:pointer;
 }
 
-/* MAP */
+.qr-image{
+  width:280px;
+  max-width:90%;
+  border-radius:20px;
+  border:4px solid #25d366;
+  background:white;
+  padding:10px;
+}
+
+.photos{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:20px;
+}
+
+.photos img{
+  width:100%;
+  height:320px;
+  object-fit:cover;
+  border-radius:18px;
+  border:1px solid #333;
+}
 
 iframe{
   width:100%;
@@ -254,8 +206,6 @@ iframe{
   border:0;
   border-radius:18px;
 }
-
-/* FOOTER */
 
 footer{
   background:#111;
@@ -266,8 +216,7 @@ footer{
   margin-top:50px;
 }
 
-/* CHAT SYSTEM */
-
+/* CHAT */
 #chatButton{
   position:fixed;
   bottom:20px;
@@ -330,81 +279,48 @@ footer{
   cursor:pointer;
 }
 
-/* MOBILE */
-
 @media(max-width:600px){
+  .hero h2{font-size:30px;}
+  .section-title{font-size:32px;}
+  .card img{height:200px;}
 
-.hero h2{
-  font-size:30px;
+  .combo-btn,
+  .whatsapp-order-btn,
+  .line-order-btn{
+    display:block;
+    width:90%;
+    margin:12px auto;
+  }
+
+  #chatBox{
+    width:90%;
+    right:5%;
+    bottom:85px;
+  }
 }
-
-.section-title{
-  font-size:32px;
-}
-
-.card img{
-  height:200px;
-}
-
-.combo-btn,
-.whatsapp-order-btn,
-.line-order-btn{
-  display:block;
-  width:90%;
-  margin:12px auto;
-}
-
-#chatBox{
-  width:90%;
-  right:5%;
-  bottom:85px;
-}
-
-}
-
 </style>
 </head>
 
 <body>
 
 <header>
-
-<img src="logo.webp" alt="Logo">
-
-<h1>Okinawa Halal Grill</h1>
-
-<p>Halal Fast Food Takeout in Okinawa</p>
-
+  <img src="logo.webp" alt="Logo">
+  <h1>Okinawa Halal Grill</h1>
+  <p>Halal Fast Food Takeout in Okinawa</p>
 </header>
 
 <div class="hero">
+  <div class="badge">Website Under Construction</div>
+  <h2>Opening June 30</h2>
+  <p>Fresh halal burgers, broast chicken, biryani, pulao, potato and drinks.</p>
 
-<div class="badge">
-Website Under Construction
-</div>
-
-<h2>Opening June 30</h2>
-
-<p>
-Fresh halal burgers, broast chicken,
-biryani, pulao, potato and drinks.
-</p>
-
-<a class="whatsapp-btn"
-href="https://wa.me/817084455348?text=Hello%20Okinawa%20Halal%20Grill%2C%20I%20want%20to%20order"
-target="_blank">
-
-📱 Order on WhatsApp
-
-</a>
-
+  <a class="whatsapp-btn"
+  href="https://wa.me/817084455348?text=Hello%20Okinawa%20Halal%20Grill%2C%20I%20want%20to%20order"
+  target="_blank">📱 Order on WhatsApp</a>
 </div>
 
 <section>
-
-<h2 class="section-title">
-Menu
-</h2>
+<h2 class="section-title">Menu</h2>
 
 <div class="menu-grid">
 
@@ -463,54 +379,24 @@ Menu
 </div>
 
 </div>
-
 </section>
 
 <section>
-
-<h2 class="section-title">
-Quick Order Combos
-</h2>
+<h2 class="section-title">Quick Order Combos</h2>
 
 <div class="combo-buttons">
-
-<a href="https://wa.me/817084455348?text=My%20Order:%0A-%20Zinger%20Burger%20x1%0A-%20Cola%20x1"
-class="combo-btn">
-
-🍔 Burger Combo ¥850
-
-</a>
-
-<a href="https://wa.me/817084455348?text=My%20Order:%0A-%20Broast%20x1%0A-%20Cola%20x1"
-class="combo-btn">
-
-🍗 Broast Combo ¥1400
-
-</a>
-
-<a href="https://wa.me/817084455348?text=My%20Order:%0A-%20Chicken%20Biryani%20x1%0A-%20Cola%20x1"
-class="combo-btn">
-
-🍛 Biryani Combo ¥1200
-
-</a>
-
+<a href="https://wa.me/817084455348?text=My%20Order:%0A-%20Zinger%20Burger%20x1%0A-%20Cola%20x1" class="combo-btn">🍔 Burger Combo ¥850</a>
+<a href="https://wa.me/817084455348?text=My%20Order:%0A-%20Broast%20x1%0A-%20Cola%20x1" class="combo-btn">🍗 Broast Combo ¥1400</a>
+<a href="https://wa.me/817084455348?text=My%20Order:%0A-%20Chicken%20Biryani%20x1%0A-%20Cola%20x1" class="combo-btn">🍛 Biryani Combo ¥1200</a>
 </div>
-
 </section>
 
 <section>
-
-<h2 class="section-title">
-Delivery Order Form
-</h2>
+<h2 class="section-title">Delivery Order Form</h2>
 
 <div class="delivery-form">
-
 <input id="name" type="text" placeholder="Your Name">
-
 <input id="phone" type="text" placeholder="Phone Number">
-
 <textarea id="order" placeholder="Example: Zinger Burger x2, Cola x1"></textarea>
 
 <select id="type">
@@ -520,210 +406,133 @@ Delivery Order Form
 
 <textarea id="address" placeholder="Delivery Address"></textarea>
 
-<button onclick="sendDeliveryOrder()">
-Send Order on WhatsApp
-</button>
-
+<button onclick="sendDeliveryOrder()">Send Delivery Order</button>
 </div>
-
 </section>
 
 <section>
-
-<h2 class="section-title">
-Connect With Our Bot
-</h2>
+<h2 class="section-title">Connect With Our Bot</h2>
 
 <div class="combo-buttons">
-
-<a class="whatsapp-order-btn"
-href="https://wa.me/817084455348"
-target="_blank">
-
-📱 Connect on WhatsApp
-
-</a>
-
-<a class="line-order-btn"
-href="#">
-
-💬 LINE Coming Soon
-
-</a>
-
+<a class="whatsapp-order-btn" href="https://wa.me/817084455348" target="_blank">📱 Connect on WhatsApp</a>
+<a class="line-order-btn" href="#">💬 LINE Coming Soon</a>
 </div>
 
 <div style="text-align:center; margin-top:40px;">
+<h3 style="color:#25d366; margin-bottom:20px; font-size:28px;">WhatsApp QR Code</h3>
 
-<h3 style="color:#25d366; margin-bottom:20px; font-size:28px;">
-WhatsApp QR Code
-</h3>
-
-<img
-class="qr-image"
+<img class="qr-image"
 src="https://api.qrserver.com/v1/create-qr-code/?size=280x280&data=https://wa.me/817084455348"
 alt="WhatsApp QR Code">
-
 </div>
-
 </section>
 
 <section>
-
-<h2 class="section-title">
-Shop Photos
-</h2>
+<h2 class="section-title">Shop Photos</h2>
 
 <div class="photos">
-
 <img loading="lazy" src="outside.webp" alt="Outside">
-
 <img loading="lazy" src="inside.webp" alt="Inside">
-
 </div>
-
 </section>
 
 <section>
-
-<h2 class="section-title">
-Location
-</h2>
+<h2 class="section-title">Location</h2>
 
 <iframe
 src="https://www.google.com/maps?q=Okinawa%20Halal%20Grill&output=embed"
 loading="lazy"
 allowfullscreen>
 </iframe>
-
 </section>
 
 <footer>
-
-© 2026 Okinawa Halal Grill.
-All Rights Reserved.
-
+© 2026 Okinawa Halal Grill. All Rights Reserved.
 </footer>
 
-<!-- AI CHAT -->
-
 <div id="chatBox">
-
-<div id="chatHeader">
-💬 Okinawa Halal Grill AI
-</div>
+<div id="chatHeader">💬 Okinawa Halal Grill AI</div>
 
 <div id="chatMessages">
 <p><b>AI:</b> Hello! What would you like to order?</p>
 </div>
 
 <input id="chatInput" type="text" placeholder="Type your message..." />
-
-<button onclick="sendChat()">
-Send
-</button>
-
+<button onclick="sendChat()">Send</button>
 </div>
 
-<button id="chatButton" onclick="toggleChat()">
-💬 Chat
-</button>
+<button id="chatButton" onclick="toggleChat()">💬 Chat</button>
 
 <script>
-
 function toggleChat(){
-
-const box=document.getElementById("chatBox");
-
-box.style.display=
-box.style.display==="block" ? "none" : "block";
-
+  const box=document.getElementById("chatBox");
+  box.style.display=box.style.display==="block" ? "none" : "block";
 }
 
 function sendChat(){
+  const input=document.getElementById("chatInput");
+  const messages=document.getElementById("chatMessages");
+  const text=input.value.trim();
 
-const input=document.getElementById("chatInput");
+  if(!text) return;
 
-const messages=document.getElementById("chatMessages");
+  messages.innerHTML += `<p><b>You:</b> ${text}</p>`;
 
-const text=input.value.trim();
+  let reply="Thank you! Please send your order on WhatsApp for confirmation.";
 
-if(!text) return;
+  if(text.toLowerCase().includes("menu")){
+    reply="Our menu includes burgers, broast chicken, biryani, pulao, potato and cola.";
+  }
 
-messages.innerHTML +=
-`<p><b>You:</b> ${text}</p>`;
+  if(text.toLowerCase().includes("order")){
+    reply="Please tell us item name and quantity, or use the WhatsApp order button.";
+  }
 
-let reply=
-"Thank you! Please send your order on WhatsApp for confirmation.";
+  if(text.toLowerCase().includes("open")){
+    reply="Opening June 30. Website is under construction.";
+  }
 
-if(text.toLowerCase().includes("menu")){
-reply=
-"Our menu includes burgers, broast chicken, biryani, pulao, potato and cola.";
-}
-
-if(text.toLowerCase().includes("order")){
-reply=
-"Please tell us item name and quantity, or use the WhatsApp order button.";
-}
-
-if(text.toLowerCase().includes("open")){
-reply=
-"Opening June 30. Website is under construction.";
-}
-
-messages.innerHTML +=
-`<p><b>AI:</b> ${reply}</p>`;
-
-input.value="";
-
-messages.scrollTop=
-messages.scrollHeight;
-
+  messages.innerHTML += `<p><b>AI:</b> ${reply}</p>`;
+  input.value="";
+  messages.scrollTop=messages.scrollHeight;
 }
 
 function sendDeliveryOrder(){
+  const name=document.getElementById("name").value;
+  const phone=document.getElementById("phone").value;
+  const order=document.getElementById("order").value;
+  const type=document.getElementById("type").value;
+  const address=document.getElementById("address").value;
 
-const name=
-document.getElementById("name").value;
+  if(!name || !phone || !order){
+    alert("Please fill name, phone and order.");
+    return;
+  }
 
-const phone=
-document.getElementById("phone").value;
-
-const order=
-document.getElementById("order").value;
-
-const type=
-document.getElementById("type").value;
-
-const address=
-document.getElementById("address").value;
-
-const fee=
-type==="Delivery" ? "¥300" : "¥0";
-
-const message=
-`New Order
-
-Name: ${name}
-
-Phone: ${phone}
-
-Order: ${order}
-
-Type: ${type}
-
-Delivery Fee: ${fee}
-
-Address: ${address}`;
-
-const url=
-"https://wa.me/817084455348?text="+
-encodeURIComponent(message);
-
-window.open(url,"_blank");
-
+  fetch("https://n8n.sakurajapanbot.tech/webhook/delivery-order", {
+    method:"POST",
+    headers:{
+      "Content-Type":"application/json"
+    },
+    body:JSON.stringify({
+      name:name,
+      phone:phone,
+      order:order,
+      type:type,
+      address:address
+    })
+  })
+  .then(function(){
+    alert("Order sent successfully!");
+    window.open(
+      "https://wa.me/817084455348?text=Order%20sent%20successfully",
+      "_blank"
+    );
+  })
+  .catch(function(){
+    alert("Order send failed. Please try WhatsApp button.");
+  });
 }
-
 </script>
 
 </body>
