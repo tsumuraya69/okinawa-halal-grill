@@ -6,7 +6,12 @@
 <title>Okinawa Halal Grill</title>
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
 body{
   font-family:Arial,sans-serif;
@@ -15,6 +20,8 @@ body{
   line-height:1.6;
 }
 
+/* HEADER */
+
 header{
   background:#111;
   text-align:center;
@@ -22,14 +29,21 @@ header{
   border-bottom:2px solid #d4af37;
 }
 
-header img{width:120px;margin-bottom:10px;}
+header img{
+  width:120px;
+  margin-bottom:10px;
+}
 
 header h1{
   color:#d4af37;
   font-size:38px;
 }
 
-header p{color:#ccc;}
+header p{
+  color:#ccc;
+}
+
+/* HERO */
 
 .hero{
   text-align:center;
@@ -47,7 +61,10 @@ header p{color:#ccc;}
   margin-bottom:15px;
 }
 
-.hero h2{font-size:42px;margin-bottom:10px;}
+.hero h2{
+  font-size:42px;
+  margin-bottom:10px;
+}
 
 .hero p{
   max-width:700px;
@@ -68,6 +85,8 @@ header p{color:#ccc;}
   margin:10px;
 }
 
+/* SECTIONS */
+
 section{
   max-width:1200px;
   margin:auto;
@@ -80,6 +99,8 @@ section{
   font-size:42px;
   margin-bottom:30px;
 }
+
+/* MENU */
 
 .menu-grid{
   display:grid;
@@ -126,6 +147,8 @@ section{
   padding:12px 0 20px;
 }
 
+/* COMBO BUTTONS */
+
 .combo-buttons{
   text-align:center;
   margin-top:35px;
@@ -162,6 +185,8 @@ section{
   font-size:18px;
 }
 
+/* QR */
+
 .qr-image{
   width:280px;
   max-width:90%;
@@ -170,6 +195,8 @@ section{
   background:white;
   padding:10px;
 }
+
+/* SHOP PHOTOS */
 
 .photos{
   display:grid;
@@ -185,12 +212,50 @@ section{
   border:1px solid #333;
 }
 
+/* DELIVERY FORM */
+
+.delivery-form{
+  max-width:650px;
+  margin:auto;
+  background:#111;
+  padding:25px;
+  border-radius:18px;
+  border:1px solid #333;
+}
+
+.delivery-form input,
+.delivery-form textarea,
+.delivery-form select{
+  width:100%;
+  padding:14px;
+  margin:10px 0;
+  border:none;
+  border-radius:8px;
+  font-size:16px;
+}
+
+.delivery-form button{
+  width:100%;
+  background:#25d366;
+  color:white;
+  padding:15px;
+  border:none;
+  border-radius:10px;
+  font-size:18px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+/* MAP */
+
 iframe{
   width:100%;
   height:400px;
   border:0;
   border-radius:18px;
 }
+
+/* FOOTER */
 
 footer{
   background:#111;
@@ -201,7 +266,8 @@ footer{
   margin-top:50px;
 }
 
-/* Chat System */
+/* CHAT SYSTEM */
+
 #chatButton{
   position:fixed;
   bottom:20px;
@@ -264,216 +330,400 @@ footer{
   cursor:pointer;
 }
 
+/* MOBILE */
+
 @media(max-width:600px){
-  .hero h2{font-size:30px;}
-  .section-title{font-size:32px;}
-  .card img{height:200px;}
 
-  .combo-btn,
-  .whatsapp-order-btn,
-  .line-order-btn{
-    display:block;
-    width:90%;
-    margin:12px auto;
-  }
-
-  #chatBox{
-    width:90%;
-    right:5%;
-    bottom:85px;
-  }
+.hero h2{
+  font-size:30px;
 }
+
+.section-title{
+  font-size:32px;
+}
+
+.card img{
+  height:200px;
+}
+
+.combo-btn,
+.whatsapp-order-btn,
+.line-order-btn{
+  display:block;
+  width:90%;
+  margin:12px auto;
+}
+
+#chatBox{
+  width:90%;
+  right:5%;
+  bottom:85px;
+}
+
+}
+
 </style>
 </head>
 
 <body>
 
 <header>
-  <img src="logo.webp" alt="Logo">
-  <h1>Okinawa Halal Grill</h1>
-  <p>Halal Fast Food Takeout in Okinawa</p>
+
+<img src="logo.webp" alt="Logo">
+
+<h1>Okinawa Halal Grill</h1>
+
+<p>Halal Fast Food Takeout in Okinawa</p>
+
 </header>
 
 <div class="hero">
-  <div class="badge">Website Under Construction</div>
-  <h2>Opening June 30</h2>
-  <p>Fresh halal burgers, broast chicken, biryani, pulao, potato and drinks.</p>
 
-  <a class="whatsapp-btn"
-  href="https://wa.me/817084455348?text=Hello%20Okinawa%20Halal%20Grill%2C%20I%20want%20to%20order"
-  target="_blank">
-  📱 Order on WhatsApp
-  </a>
+<div class="badge">
+Website Under Construction
+</div>
+
+<h2>Opening June 30</h2>
+
+<p>
+Fresh halal burgers, broast chicken,
+biryani, pulao, potato and drinks.
+</p>
+
+<a class="whatsapp-btn"
+href="https://wa.me/817084455348?text=Hello%20Okinawa%20Halal%20Grill%2C%20I%20want%20to%20order"
+target="_blank">
+
+📱 Order on WhatsApp
+
+</a>
+
 </div>
 
 <section>
-  <h2 class="section-title">Menu</h2>
 
-  <div class="menu-grid">
-    <div class="card">
-      <img loading="lazy" src="zinger-burger.webp" alt="Zinger Burger">
-      <h3>Zinger Burger</h3>
-      <p class="price">¥650</p>
-    </div>
+<h2 class="section-title">
+Menu
+</h2>
 
-    <div class="card">
-      <img loading="lazy" src="chicken-burger.webp" alt="Chicken Burger">
-      <h3>Chicken Burger</h3>
-      <p class="price">¥500</p>
-    </div>
+<div class="menu-grid">
 
-    <div class="card">
-      <img loading="lazy" src="double-burger.webp" alt="Double Burger">
-      <h3>Double Burger</h3>
-      <p class="price">¥800</p>
-    </div>
+<div class="card">
+<img loading="lazy" src="zinger-burger.webp" alt="Zinger Burger">
+<h3>Zinger Burger</h3>
+<p class="price">¥650</p>
+</div>
 
-    <div class="card">
-      <img loading="lazy" src="broast-3pc.webp" alt="Broast Chicken">
-      <h3>Broast Chicken</h3>
-      <p class="price">¥1200</p>
-    </div>
+<div class="card">
+<img loading="lazy" src="chicken-burger.webp" alt="Chicken Burger">
+<h3>Chicken Burger</h3>
+<p class="price">¥500</p>
+</div>
 
-    <div class="card">
-      <img loading="lazy" src="chicken-biryani.webp" alt="Chicken Biryani">
-      <h3>Chicken Biryani</h3>
-      <p class="price">¥1000</p>
-    </div>
+<div class="card">
+<img loading="lazy" src="double-burger.webp" alt="Double Burger">
+<h3>Double Burger</h3>
+<p class="price">¥800</p>
+</div>
 
-    <div class="card">
-      <img loading="lazy" src="chicken-pulao.webp" alt="Chicken Pulao">
-      <h3>Chicken Pulao</h3>
-      <p class="price">¥900</p>
-    </div>
+<div class="card">
+<img loading="lazy" src="broast-3pc.webp" alt="Broast Chicken">
+<h3>Broast Chicken</h3>
+<p class="price">¥1200</p>
+</div>
 
-    <div class="card">
-      <img loading="lazy" src="mutton-biryani.webp" alt="Mutton Biryani">
-      <h3>Mutton Biryani</h3>
-      <p class="price">¥1300</p>
-    </div>
+<div class="card">
+<img loading="lazy" src="chicken-biryani.webp" alt="Chicken Biryani">
+<h3>Chicken Biryani</h3>
+<p class="price">¥1000</p>
+</div>
 
-    <div class="card">
-      <img loading="lazy" src="potato.webp" alt="Potato">
-      <h3>Potato</h3>
-      <p class="price">¥250</p>
-    </div>
+<div class="card">
+<img loading="lazy" src="chicken-pulao.webp" alt="Chicken Pulao">
+<h3>Chicken Pulao</h3>
+<p class="price">¥900</p>
+</div>
 
-    <div class="card">
-      <img loading="lazy" src="cola.webp" alt="Cola">
-      <h3>Cola</h3>
-      <p class="price">¥200</p>
-    </div>
-  </div>
+<div class="card">
+<img loading="lazy" src="mutton-biryani.webp" alt="Mutton Biryani">
+<h3>Mutton Biryani</h3>
+<p class="price">¥1300</p>
+</div>
+
+<div class="card">
+<img loading="lazy" src="potato.webp" alt="Potato">
+<h3>Potato</h3>
+<p class="price">¥250</p>
+</div>
+
+<div class="card">
+<img loading="lazy" src="cola.webp" alt="Cola">
+<h3>Cola</h3>
+<p class="price">¥200</p>
+</div>
+
+</div>
+
 </section>
 
 <section>
-  <h2 class="section-title">Quick Order Combos</h2>
 
-  <div class="combo-buttons">
-    <a href="https://wa.me/817084455348?text=My%20Order:%0A-%20Zinger%20Burger%20x1%0A-%20Cola%20x1"
-    class="combo-btn">🍔 Burger Combo ¥850</a>
+<h2 class="section-title">
+Quick Order Combos
+</h2>
 
-    <a href="https://wa.me/817084455348?text=My%20Order:%0A-%20Broast%20x1%0A-%20Cola%20x1"
-    class="combo-btn">🍗 Broast Combo ¥1400</a>
+<div class="combo-buttons">
 
-    <a href="https://wa.me/817084455348?text=My%20Order:%0A-%20Chicken%20Biryani%20x1%0A-%20Cola%20x1"
-    class="combo-btn">🍛 Biryani Combo ¥1200</a>
-  </div>
+<a href="https://wa.me/817084455348?text=My%20Order:%0A-%20Zinger%20Burger%20x1%0A-%20Cola%20x1"
+class="combo-btn">
+
+🍔 Burger Combo ¥850
+
+</a>
+
+<a href="https://wa.me/817084455348?text=My%20Order:%0A-%20Broast%20x1%0A-%20Cola%20x1"
+class="combo-btn">
+
+🍗 Broast Combo ¥1400
+
+</a>
+
+<a href="https://wa.me/817084455348?text=My%20Order:%0A-%20Chicken%20Biryani%20x1%0A-%20Cola%20x1"
+class="combo-btn">
+
+🍛 Biryani Combo ¥1200
+
+</a>
+
+</div>
+
 </section>
 
 <section>
-  <h2 class="section-title">Connect With Our Bot</h2>
 
-  <div class="combo-buttons">
-    <a class="whatsapp-order-btn"
-    href="https://wa.me/817084455348"
-    target="_blank">📱 Connect on WhatsApp</a>
+<h2 class="section-title">
+Delivery Order Form
+</h2>
 
-    <a class="line-order-btn" href="#">💬 LINE Coming Soon</a>
-  </div>
+<div class="delivery-form">
 
-  <div style="text-align:center; margin-top:40px;">
-    <h3 style="color:#25d366; margin-bottom:20px; font-size:28px;">
-      WhatsApp QR Code
-    </h3>
+<input id="name" type="text" placeholder="Your Name">
 
-    <img
-    class="qr-image"
-    src="https://api.qrserver.com/v1/create-qr-code/?size=280x280&data=https://wa.me/817084455348"
-    alt="WhatsApp QR Code">
-  </div>
+<input id="phone" type="text" placeholder="Phone Number">
+
+<textarea id="order" placeholder="Example: Zinger Burger x2, Cola x1"></textarea>
+
+<select id="type">
+<option value="Pickup">Pickup</option>
+<option value="Delivery">Delivery + ¥300</option>
+</select>
+
+<textarea id="address" placeholder="Delivery Address"></textarea>
+
+<button onclick="sendDeliveryOrder()">
+Send Order on WhatsApp
+</button>
+
+</div>
+
 </section>
 
 <section>
-  <h2 class="section-title">Shop Photos</h2>
 
-  <div class="photos">
-    <img loading="lazy" src="outside.webp" alt="Outside">
-    <img loading="lazy" src="inside.webp" alt="Inside">
-  </div>
+<h2 class="section-title">
+Connect With Our Bot
+</h2>
+
+<div class="combo-buttons">
+
+<a class="whatsapp-order-btn"
+href="https://wa.me/817084455348"
+target="_blank">
+
+📱 Connect on WhatsApp
+
+</a>
+
+<a class="line-order-btn"
+href="#">
+
+💬 LINE Coming Soon
+
+</a>
+
+</div>
+
+<div style="text-align:center; margin-top:40px;">
+
+<h3 style="color:#25d366; margin-bottom:20px; font-size:28px;">
+WhatsApp QR Code
+</h3>
+
+<img
+class="qr-image"
+src="https://api.qrserver.com/v1/create-qr-code/?size=280x280&data=https://wa.me/817084455348"
+alt="WhatsApp QR Code">
+
+</div>
+
 </section>
 
 <section>
-  <h2 class="section-title">Location</h2>
 
-  <iframe
-  src="https://www.google.com/maps?q=Okinawa%20Halal%20Grill&output=embed"
-  loading="lazy"
-  allowfullscreen>
-  </iframe>
+<h2 class="section-title">
+Shop Photos
+</h2>
+
+<div class="photos">
+
+<img loading="lazy" src="outside.webp" alt="Outside">
+
+<img loading="lazy" src="inside.webp" alt="Inside">
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">
+Location
+</h2>
+
+<iframe
+src="https://www.google.com/maps?q=Okinawa%20Halal%20Grill&output=embed"
+loading="lazy"
+allowfullscreen>
+</iframe>
+
 </section>
 
 <footer>
-  © 2026 Okinawa Halal Grill. All Rights Reserved.
+
+© 2026 Okinawa Halal Grill.
+All Rights Reserved.
+
 </footer>
 
+<!-- AI CHAT -->
+
 <div id="chatBox">
-  <div id="chatHeader">💬 Okinawa Halal Grill AI</div>
 
-  <div id="chatMessages">
-    <p><b>AI:</b> Hello! What would you like to order?</p>
-  </div>
-
-  <input id="chatInput" type="text" placeholder="Type your message..." />
-
-  <button onclick="sendChat()">Send</button>
+<div id="chatHeader">
+💬 Okinawa Halal Grill AI
 </div>
 
-<button id="chatButton" onclick="toggleChat()">💬 Chat</button>
+<div id="chatMessages">
+<p><b>AI:</b> Hello! What would you like to order?</p>
+</div>
+
+<input id="chatInput" type="text" placeholder="Type your message..." />
+
+<button onclick="sendChat()">
+Send
+</button>
+
+</div>
+
+<button id="chatButton" onclick="toggleChat()">
+💬 Chat
+</button>
 
 <script>
+
 function toggleChat(){
-  const box=document.getElementById("chatBox");
-  box.style.display = box.style.display==="block" ? "none" : "block";
+
+const box=document.getElementById("chatBox");
+
+box.style.display=
+box.style.display==="block" ? "none" : "block";
+
 }
 
 function sendChat(){
-  const input=document.getElementById("chatInput");
-  const messages=document.getElementById("chatMessages");
-  const text=input.value.trim();
 
-  if(!text) return;
+const input=document.getElementById("chatInput");
 
-  messages.innerHTML += `<p><b>You:</b> ${text}</p>`;
+const messages=document.getElementById("chatMessages");
 
-  let reply="Thank you! Please send your order on WhatsApp for confirmation.";
+const text=input.value.trim();
 
-  if(text.toLowerCase().includes("menu")){
-    reply="Our menu includes burgers, broast chicken, biryani, pulao, potato and cola.";
-  }
+if(!text) return;
 
-  if(text.toLowerCase().includes("order")){
-    reply="Please tell us item name and quantity, or use the WhatsApp order button.";
-  }
+messages.innerHTML +=
+`<p><b>You:</b> ${text}</p>`;
 
-  if(text.toLowerCase().includes("open")){
-    reply="Opening June 30. Website is under construction.";
-  }
+let reply=
+"Thank you! Please send your order on WhatsApp for confirmation.";
 
-  messages.innerHTML += `<p><b>AI:</b> ${reply}</p>`;
-  input.value="";
-  messages.scrollTop=messages.scrollHeight;
+if(text.toLowerCase().includes("menu")){
+reply=
+"Our menu includes burgers, broast chicken, biryani, pulao, potato and cola.";
 }
+
+if(text.toLowerCase().includes("order")){
+reply=
+"Please tell us item name and quantity, or use the WhatsApp order button.";
+}
+
+if(text.toLowerCase().includes("open")){
+reply=
+"Opening June 30. Website is under construction.";
+}
+
+messages.innerHTML +=
+`<p><b>AI:</b> ${reply}</p>`;
+
+input.value="";
+
+messages.scrollTop=
+messages.scrollHeight;
+
+}
+
+function sendDeliveryOrder(){
+
+const name=
+document.getElementById("name").value;
+
+const phone=
+document.getElementById("phone").value;
+
+const order=
+document.getElementById("order").value;
+
+const type=
+document.getElementById("type").value;
+
+const address=
+document.getElementById("address").value;
+
+const fee=
+type==="Delivery" ? "¥300" : "¥0";
+
+const message=
+`New Order
+
+Name: ${name}
+
+Phone: ${phone}
+
+Order: ${order}
+
+Type: ${type}
+
+Delivery Fee: ${fee}
+
+Address: ${address}`;
+
+const url=
+"https://wa.me/817084455348?text="+
+encodeURIComponent(message);
+
+window.open(url,"_blank");
+
+}
+
 </script>
 
 </body>
