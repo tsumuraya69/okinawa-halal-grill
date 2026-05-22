@@ -54,20 +54,8 @@ header p{color:#ccc;font-size:18px;}
   box-shadow:0 0 25px #d4af37;
 }
 
-.hero h2{font-size:50px;margin-bottom:15px;color:#d4af37;}
+.hero h2{font-size:50px;margin-bottom:15px;}
 .hero p{max-width:700px;margin:auto;color:#ddd;font-size:18px;}
-
-.countdown-box{
-  margin-top:25px;
-  background:#fff;
-  color:#000;
-  display:inline-block;
-  padding:18px 25px;
-  border-radius:15px;
-  font-size:32px;
-  font-weight:bold;
-  box-shadow:0 0 25px rgba(255,255,255,0.5);
-}
 
 .whatsapp-btn,.whatsapp-order-btn,.uber-btn{
   display:inline-block;
@@ -90,52 +78,6 @@ section{max-width:1200px;margin:auto;padding:60px 20px;}
   color:#d4af37;
   font-size:48px;
   margin-bottom:35px;
-}
-
-.quick-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-  gap:18px;
-}
-
-.quick-btn{
-  display:block;
-  text-align:center;
-  padding:18px;
-  border-radius:14px;
-  text-decoration:none;
-  font-weight:bold;
-  font-size:18px;
-  color:#fff;
-}
-
-.q-uber{background:#000;border:2px solid #25d366;}
-.q-menu{background:#d4af37;color:#000;}
-.q-whatsapp{background:#25d366;}
-.q-map{background:#4285f4;}
-.q-call{background:#ff3b30;}
-.q-insta{background:#e1306c;}
-
-.time-calendar{
-  background:#111;
-  border:1px solid #333;
-  border-radius:20px;
-  padding:30px;
-  text-align:center;
-  max-width:700px;
-  margin:auto;
-}
-
-.time-now{
-  font-size:42px;
-  color:#25d366;
-  font-weight:bold;
-}
-
-.date-now{
-  font-size:26px;
-  color:#d4af37;
-  margin-top:10px;
 }
 
 .menu-grid{
@@ -361,15 +303,15 @@ footer{
   .hero h2{font-size:34px;}
   .section-title{font-size:36px;}
   .card img{height:200px;}
+
   .badge div{font-size:26px!important;}
-  .countdown-box{font-size:22px;}
-  .time-now{font-size:32px;}
-  .date-now{font-size:20px;}
+
   .combo-btn,.whatsapp-order-btn,.line-order-btn,.uber-btn{
     display:block;
     width:95%;
     margin:12px auto;
   }
+
   #chatBox{width:90%;right:5%;bottom:85px;}
 }
 </style>
@@ -391,11 +333,9 @@ footer{
   <div class="badge">
     <div style="font-size:48px;">🚧 WEBSITE UNDER CONSTRUCTION 🚧</div>
     <div style="font-size:40px;direction:rtl;">🚧 الموقع قيد الإنشاء 🚧</div>
-    <div style="font-size:30px;color:#ff3b30;margin-top:18px;">🔥 GRAND OPENING — JUNE 30TH 🔥</div>
-    <div id="countdown" class="countdown-box">Loading Timer...</div>
   </div>
 
-  <h2>🔥 Okinawa's Best Halal Kitchen</h2>
+  <h2>Opening June 30</h2>
   <p>Fresh halal burgers, broast chicken, biryani, pulao, potato and drinks.</p>
 
   <a class="whatsapp-btn"
@@ -408,28 +348,6 @@ footer{
 </div>
 
 <section>
-<h2 class="section-title">🔥 Quick Access</h2>
-
-<div class="quick-grid">
-<a class="quick-btn q-uber" href="https://www.ubereats.com/jp-en/region/okinawa" target="_blank">🛵 Uber Eats</a>
-<a class="quick-btn q-menu" href="#menu-section">🍔 Menu</a>
-<a class="quick-btn q-whatsapp" href="https://wa.me/817084455348" target="_blank">📱 WhatsApp</a>
-<a class="quick-btn q-map" href="https://maps.google.com/?q=Okinawa+Halal+Kitchen" target="_blank">📍 Google Maps</a>
-<a class="quick-btn q-call" href="tel:+817084455348">📞 Call</a>
-<a class="quick-btn q-insta" href="https://instagram.com/" target="_blank">📸 Instagram</a>
-</div>
-</section>
-
-<section>
-<h2 class="section-title">⏰ Time & Calendar</h2>
-
-<div class="time-calendar">
-<div class="time-now" id="liveTime">--:--:--</div>
-<div class="date-now" id="liveDate">Loading Date...</div>
-</div>
-</section>
-
-<section id="menu-section">
 <h2 class="section-title">Menu</h2>
 
 <div class="menu-grid">
@@ -533,55 +451,6 @@ allowfullscreen>
 <button id="chatButton" onclick="toggleChat()">💬 Chat</button>
 
 <script>
-function updateTime(){
-  const now=new Date();
-
-  const time=now.toLocaleTimeString("en-US",{
-    timeZone:"Asia/Tokyo",
-    hour:"2-digit",
-    minute:"2-digit",
-    second:"2-digit"
-  });
-
-  const date=now.toLocaleDateString("en-US",{
-    timeZone:"Asia/Tokyo",
-    weekday:"long",
-    year:"numeric",
-    month:"long",
-    day:"numeric"
-  });
-
-  document.getElementById("liveTime").innerHTML=time;
-  document.getElementById("liveDate").innerHTML=date+" — Okinawa, Japan";
-}
-
-setInterval(updateTime,1000);
-updateTime();
-
-function startCountdown(){
-  const openingDate=new Date("June 30, 2026 00:00:00").getTime();
-
-  setInterval(function(){
-    const now=new Date().getTime();
-    const distance=openingDate-now;
-
-    if(distance<0){
-      document.getElementById("countdown").innerHTML="🔥 WE ARE OPEN NOW 🔥";
-      return;
-    }
-
-    const days=Math.floor(distance/(1000*60*60*24));
-    const hours=Math.floor((distance%(1000*60*60*24))/(1000*60*60));
-    const minutes=Math.floor((distance%(1000*60*60))/(1000*60));
-    const seconds=Math.floor((distance%(1000*60))/1000);
-
-    document.getElementById("countdown").innerHTML=
-    days+"d : "+hours+"h : "+minutes+"m : "+seconds+"s";
-  },1000);
-}
-
-startCountdown();
-
 function toggleChat(){
   const box=document.getElementById("chatBox");
   box.style.display=box.style.display==="block"?"none":"block";
