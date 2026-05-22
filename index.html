@@ -15,7 +15,8 @@ font-family:Arial,sans-serif;
 
 body{
 background:#000;
-color:white;
+color:#fff;
+overflow-x:hidden;
 }
 
 .container{
@@ -25,20 +26,19 @@ margin:auto;
 padding:20px;
 }
 
-.top-bismillah{
+.bismillah{
 text-align:center;
-font-size:28px;
-color:#FFD700;
-margin-top:10px;
-margin-bottom:15px;
+font-size:34px;
+color:#d4af37;
 font-weight:bold;
+margin:20px 0;
+line-height:1.6;
 }
 
 .logo{
 display:block;
-margin:auto;
-width:180px;
-margin-bottom:20px;
+width:170px;
+margin:0 auto 20px;
 }
 
 .hero{
@@ -47,56 +47,93 @@ padding:30px 10px;
 }
 
 .hero h1{
-font-size:50px;
-color:#FFD700;
-margin-bottom:15px;
+font-size:52px;
+color:#d4af37;
+margin-bottom:12px;
 }
 
 .hero p{
-font-size:20px;
-color:#ccc;
-margin-bottom:20px;
+font-size:22px;
+color:#ddd;
+}
+
+.section-title{
+text-align:center;
+font-size:48px;
+color:#d4af37;
+margin:50px 0 30px;
+}
+
+.menu-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:24px;
+}
+
+.menu-card{
+background:#111;
+border:1px solid #222;
+border-radius:18px;
+padding:18px;
+text-align:center;
+transition:.4s;
+}
+
+.menu-card:hover{
+transform:translateY(-8px) rotate(2deg);
+box-shadow:0 0 25px rgba(212,175,55,.5);
+}
+
+.menu-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:15px;
+}
+
+.menu-card h3{
+font-size:26px;
+color:#d4af37;
+margin:14px 0 8px;
+}
+
+.menu-card p{
+font-size:22px;
 }
 
 .order-box,
 .track-box{
 background:#111;
-border:1px solid #222;
-border-radius:20px;
+border:1px solid #333;
+border-radius:22px;
 padding:30px;
-margin-top:40px;
-}
-
-.section-title{
-text-align:center;
-font-size:50px;
-color:#FFD700;
-margin-bottom:30px;
-font-weight:bold;
+margin:50px auto;
+max-width:760px;
 }
 
 input,
 textarea,
 select{
 width:100%;
-padding:18px;
-margin-bottom:20px;
+padding:17px;
+margin-bottom:18px;
 border:none;
-border-radius:15px;
-font-size:22px;
-background:#ddd;
+border-radius:13px;
+font-size:20px;
+background:#e5e5e5;
+color:#000;
 }
 
 button{
 width:100%;
-padding:20px;
+padding:18px;
 border:none;
-border-radius:15px;
-font-size:30px;
+border-radius:14px;
+font-size:26px;
 font-weight:bold;
-cursor:pointer;
 background:#00c853;
-color:white;
+color:#fff;
+cursor:pointer;
 }
 
 button:hover{
@@ -105,157 +142,132 @@ background:#00e676;
 
 .result{
 margin-top:25px;
-padding:20px;
-border-radius:15px;
-background:#111;
-font-size:24px;
+font-size:23px;
 line-height:1.8;
-}
-
-.menu-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-margin-top:40px;
-}
-
-.menu-card{
-background:#111;
-padding:20px;
-border-radius:20px;
 text-align:center;
-border:1px solid #222;
 }
 
-.menu-card img{
-width:100%;
-height:220px;
-object-fit:cover;
-border-radius:15px;
+.status-card{
+background:#1a1a1a;
+border:1px solid #d4af37;
+border-radius:18px;
+padding:22px;
+text-align:left;
+box-shadow:0 0 20px rgba(212,175,55,.25);
+}
+
+.status-title{
+font-size:30px;
+color:#00e676;
+font-weight:bold;
+text-align:center;
 margin-bottom:15px;
 }
 
-.menu-card h3{
-font-size:28px;
-margin-bottom:10px;
-color:#FFD700;
-}
-
-.menu-card p{
-font-size:22px;
-}
-
-.connect{
-margin-top:60px;
-text-align:center;
-}
-
-.connect h2{
-font-size:55px;
-color:#FFD700;
-margin-bottom:30px;
-}
-
-.connect-buttons{
-display:flex;
-gap:20px;
-justify-content:center;
-flex-wrap:wrap;
-}
-
-.connect-buttons a{
-background:#00c853;
-padding:20px 30px;
-border-radius:15px;
-color:white;
-font-size:28px;
-font-weight:bold;
-text-decoration:none;
-}
-
-.chat-button{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#00c853;
-padding:20px 35px;
-border-radius:50px;
-font-size:30px;
-font-weight:bold;
-text-decoration:none;
-color:white;
-z-index:999;
-}
-
 .progress-container{
-margin-top:25px;
 display:none;
+margin-top:25px;
 }
 
 .progress-bar{
 width:100%;
-height:35px;
-background:#222;
+height:25px;
+background:#333;
 border-radius:30px;
 overflow:hidden;
-margin-bottom:20px;
 }
 
 .progress{
 height:100%;
 width:25%;
 background:#00e676;
-transition:0.5s;
+transition:.8s;
 }
 
 .progress-steps{
 display:flex;
 justify-content:space-between;
-font-size:18px;
-color:#ccc;
+gap:10px;
+flex-wrap:wrap;
+font-size:15px;
+color:#d4af37;
+margin-top:12px;
 }
 
-.status-badge{
-display:inline-block;
-padding:10px 20px;
-border-radius:30px;
-font-size:18px;
-font-weight:bold;
-margin-top:10px;
-}
-
-.preparing{
-background:orange;
-color:black;
-}
-
-.delivery{
-background:#00e676;
-color:black;
-}
-
-.completed{
-background:#00c853;
-}
-
-@media(max-width:768px){
-
-.hero h1{
-font-size:35px;
-}
-
-.section-title{
-font-size:38px;
-}
-
-button{
-font-size:24px;
+.connect{
+text-align:center;
+margin:60px 0;
 }
 
 .connect h2{
-font-size:40px;
+font-size:48px;
+color:#d4af37;
+margin-bottom:25px;
 }
 
+.connect a{
+display:inline-block;
+background:#00c853;
+color:#fff;
+text-decoration:none;
+padding:18px 28px;
+border-radius:15px;
+font-size:24px;
+font-weight:bold;
+margin:10px;
+}
+
+.qr{
+width:280px;
+max-width:90%;
+background:#fff;
+padding:10px;
+border-radius:20px;
+border:5px solid #00c853;
+margin-top:25px;
+}
+
+.photos{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.photos img{
+width:100%;
+height:320px;
+object-fit:cover;
+border-radius:18px;
+border:1px solid #333;
+}
+
+.chat-btn{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#00c853;
+color:white;
+padding:18px 30px;
+border-radius:50px;
+font-size:26px;
+font-weight:bold;
+text-decoration:none;
+z-index:999;
+}
+
+footer{
+text-align:center;
+padding:35px 20px;
+color:#aaa;
+background:#111;
+margin-top:60px;
+}
+
+@media(max-width:768px){
+.hero h1{font-size:36px;}
+.section-title{font-size:34px;}
+.bismillah{font-size:26px;}
+button{font-size:22px;}
 }
 </style>
 </head>
@@ -264,16 +276,19 @@ font-size:40px;
 
 <div class="container">
 
-<div class="top-bismillah">
-﷽ بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ
+<div class="bismillah">
+﷽<br>
+بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ
 </div>
 
-<img src="logo.webp" class="logo">
+<img src="logo.webp" class="logo" alt="Okinawa Halal Grill Logo">
 
-<div class="hero">
+<section class="hero">
 <h1>Okinawa Halal Grill</h1>
-<p>100% Halal Fast Food In Okinawa</p>
-</div>
+<p>100% Halal Fast Food Takeout in Okinawa</p>
+</section>
+
+<h2 class="section-title">🍔 Menu</h2>
 
 <div class="menu-grid">
 
@@ -284,6 +299,12 @@ font-size:40px;
 </div>
 
 <div class="menu-card">
+<img src="chicken-burger.webp">
+<h3>Chicken Burger</h3>
+<p>¥500</p>
+</div>
+
+<div class="menu-card">
 <img src="double-burger.webp">
 <h3>Double Burger</h3>
 <p>¥800</p>
@@ -291,7 +312,7 @@ font-size:40px;
 
 <div class="menu-card">
 <img src="broast-3pc.webp">
-<h3>Broast 3pc</h3>
+<h3>Broast Chicken</h3>
 <p>¥1200</p>
 </div>
 
@@ -301,11 +322,29 @@ font-size:40px;
 <p>¥1000</p>
 </div>
 
+<div class="menu-card">
+<img src="mutton-biryani.webp">
+<h3>Mutton Biryani</h3>
+<p>¥1500</p>
+</div>
+
+<div class="menu-card">
+<img src="potato.webp">
+<h3>Chips</h3>
+<p>¥250</p>
+</div>
+
+<div class="menu-card">
+<img src="cola.webp">
+<h3>Cola</h3>
+<p>¥200</p>
+</div>
+
 </div>
 
 <div class="order-box">
 
-<h2 class="section-title">🍔 Delivery Order</h2>
+<h2 class="section-title">🛵 Delivery Order</h2>
 
 <input type="text" id="name" placeholder="Your Name">
 
@@ -320,9 +359,7 @@ font-size:40px;
 
 <textarea id="address" placeholder="Delivery Address"></textarea>
 
-<button onclick="sendOrder()">
-Send Delivery Order
-</button>
+<button onclick="sendOrder()">Send Delivery Order</button>
 
 </div>
 
@@ -332,26 +369,20 @@ Send Delivery Order
 
 <input type="text" id="trackPhone" placeholder="Enter Your Phone Number">
 
-<button onclick="trackOrder()">
-Track Order
-</button>
+<button onclick="trackOrder()">Track Order</button>
 
 <div class="progress-container" id="progressContainer">
-
 <div class="progress-bar">
 <div class="progress" id="progress"></div>
 </div>
-
 <div class="progress-steps">
-<span>Preparing</span>
-<span>On The Way</span>
-<span>Delivered</span>
+<span>✅ Preparing</span>
+<span>🛵 On The Way</span>
+<span>📦 Delivered</span>
+</div>
 </div>
 
-</div>
-
-<div class="result" id="result">
-</div>
+<div class="result" id="result"></div>
 
 </div>
 
@@ -359,62 +390,62 @@ Track Order
 
 <h2>Connect With Our Bot</h2>
 
-<div class="connect-buttons">
+<a href="https://wa.me/819031929592" target="_blank">📱 Connect on WhatsApp</a>
 
-<a href="https://wa.me/819031929592">
-📱 Connect on WhatsApp
-</a>
+<a href="#">💬 LINE Coming Soon</a>
 
-<a href="#">
-💬 LINE Coming Soon
-</a>
+<br>
 
+<img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=280x280&data=https://wa.me/819031929592">
+
+</div>
+
+<h2 class="section-title">Shop Photos</h2>
+
+<div class="photos">
+<img src="outside.webp">
+<img src="inside.webp">
 </div>
 
 </div>
 
-</div>
+<a href="#" class="chat-btn">💬 Chat</a>
 
-<a href="#" class="chat-button">
-💬 Chat
-</a>
+<footer>
+© 2026 Okinawa Halal Grill. All Rights Reserved.
+</footer>
 
 <script>
-
 async function sendOrder(){
 
-const name=document.getElementById("name").value;
-const phone=document.getElementById("phone").value;
-const order=document.getElementById("order").value;
+const name=document.getElementById("name").value.trim();
+const phone=document.getElementById("phone").value.trim();
+const order=document.getElementById("order").value.trim();
 const type=document.getElementById("type").value;
-const address=document.getElementById("address").value;
+const address=document.getElementById("address").value.trim();
 
 if(!name || !phone || !order){
-alert("Fill all required fields");
+alert("Please fill name, phone and order.");
 return;
 }
 
-const delivery_fee=type==="Delivery" ? 300 : 0;
+const delivery_fee = type === "Delivery" ? 300 : 0;
 
 try{
 
-const response=await fetch("https://n8n.sakurajapanbot.tech/webhook/ohg-order",{
+await fetch("https://n8n.sakurajapanbot.tech/webhook/delivery-order",{
 method:"POST",
-headers:{
-"Content-Type":"application/json"
-},
+mode:"no-cors",
 body:JSON.stringify({
-name,
-phone,
-order,
-type,
-delivery_fee,
-address,
+name:name,
+phone:phone,
+order:order,
+type:type,
+delivery_fee:delivery_fee,
+address:address,
 status:"Preparing"
 })
 });
-
-if(response.ok){
 
 alert("✅ Order Sent Successfully!");
 
@@ -423,15 +454,10 @@ document.getElementById("phone").value="";
 document.getElementById("order").value="";
 document.getElementById("address").value="";
 
-}else{
-
-alert("❌ Order Failed. Try again.");
-
-}
-
 }catch(error){
 
-alert("❌ Server Error");
+console.log(error);
+alert("❌ Order Failed. Try again.");
 
 }
 
@@ -440,123 +466,77 @@ alert("❌ Server Error");
 async function trackOrder(){
 
 const phone=document.getElementById("trackPhone").value.trim();
-
 const result=document.getElementById("result");
-
+const progressContainer=document.getElementById("progressContainer");
 const progress=document.getElementById("progress");
 
-const progressContainer=document.getElementById("progressContainer");
-
 if(!phone){
-
-result.innerHTML="❌ Enter phone number";
+result.innerHTML="❌ Enter phone number.";
+progressContainer.style.display="none";
 return;
-
 }
 
 result.innerHTML="⏳ Checking order...";
+progressContainer.style.display="none";
 
 try{
 
 const response=await fetch("https://n8n.sakurajapanbot.tech/webhook/track-order",{
 method:"POST",
-headers:{
-"Content-Type":"application/json"
-},
-body:JSON.stringify({
-phone:phone
-})
+headers:{"Content-Type":"application/json"},
+body:JSON.stringify({phone:phone})
 });
 
-const text=await response.text();
+const data=await response.json();
 
-let data;
-
-try{
-data=JSON.parse(text);
-}catch(e){
-result.innerHTML="❌ Invalid server response";
-return;
-}
+console.log(data);
 
 if(!data || !data.order_id){
-
 result.innerHTML="❌ Order not found.";
-progressContainer.style.display="none";
 return;
-
 }
 
 progressContainer.style.display="block";
 
-let progressWidth="25%";
+let status=data.status || "Preparing";
 
-if(data.status==="Preparing"){
-progressWidth="25%";
+if(status==="Preparing"){
+progress.style.width="25%";
+}else if(status==="Ready"){
+progress.style.width="50%";
+}else if(status==="On The Way"){
+progress.style.width="75%";
+}else if(status==="Delivered"){
+progress.style.width="100%";
+}else{
+progress.style.width="25%";
 }
-
-if(data.status==="On The Way"){
-progressWidth="65%";
-}
-
-if(data.status==="Delivered"){
-progressWidth="100%";
-}
-
-progress.style.width=progressWidth;
 
 result.innerHTML=`
-
-<h2>✅ Order Found</h2>
-
-<br>
-
-<b>Order ID:</b> ${data.order_id}
-
-<br><br>
-
-<b>Status:</b>
-
-<span class="status-badge preparing">
-${data.status}
-</span>
-
-<br><br>
-
-<b>Order:</b> ${data.order}
-
-<br><br>
-
-<b>Type:</b> ${data.type}
-
-<br><br>
-
-<b>Delivery Fee:</b> ¥${data.delivery_fee}
-
-<br><br>
-
-<b>Address:</b> ${data.address}
-
-<br><br>
-
-<b>Estimated Time:</b>
-${data.estimated_time || "15-30 min"}
-
-<br><br>
-
-<b>Tracking Note:</b>
-${data.tracking_note || "Order preparing"}
-
+<div class="status-card">
+<div class="status-title">📦 ${status}</div>
+🆔 Order ID: ${data.order_id || ""}<br>
+🍔 Order: ${data.order || ""}<br>
+🛵 Type: ${data.type || ""}<br>
+💴 Delivery Fee: ¥${data.delivery_fee || "0"}<br>
+📍 Address: ${data.address || ""}<br>
+⏱ Estimated Time: ${data.estimated_time || "15-30 min"}<br>
+📝 Note: ${data.tracking_note || "Order received"}<br>
+👨‍✈️ Driver: ${data.driver_name || "Waiting"}<br>
+📞 Driver Phone: ${data.driver_phone || "Waiting"}<br>
+🛵 Driver Status: ${data.driver_status || "Kitchen Preparing"}
+</div>
 `;
 
 }catch(error){
 
+console.log(error);
 result.innerHTML="❌ Tracking system not ready.";
+progressContainer.style.display="none";
 
 }
 
 }
-
 </script>
 
 </body>
