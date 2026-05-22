@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Okinawa Halal Grill</title>
+<title>Okinawa Halal Kitchen</title>
 
 <style>
 *{
@@ -17,6 +17,18 @@ scroll-behavior:smooth;
 body{
 background:#000;
 color:#fff;
+line-height:1.6;
+}
+
+.bismillah-top{
+color:#d4af37;
+font-size:42px;
+font-weight:bold;
+direction:rtl;
+text-align:center;
+padding:25px 10px 10px;
+font-family:"Times New Roman",serif;
+text-shadow:0 0 15px rgba(212,175,55,0.6);
 }
 
 header{
@@ -44,7 +56,18 @@ font-size:18px;
 .hero{
 padding:60px 20px;
 text-align:center;
-background:#111;
+background:linear-gradient(135deg,#111,#1a1a1a);
+}
+
+.badge{
+display:inline-block;
+background:#d4af37;
+color:#000;
+padding:20px 30px;
+border-radius:18px;
+font-weight:bold;
+margin-bottom:25px;
+box-shadow:0 0 25px #d4af37;
 }
 
 .hero h2{
@@ -108,6 +131,7 @@ box-shadow:0 0 25px rgba(212,175,55,0.5);
 width:100%;
 height:250px;
 object-fit:cover;
+display:block;
 }
 
 .card-content{
@@ -197,6 +221,33 @@ border-radius:12px;
 font-size:18px;
 background:#666;
 color:white;
+display:block !important;
+visibility:visible !important;
+opacity:1 !important;
+}
+
+#payment_method{
+display:block !important;
+visibility:visible !important;
+opacity:1 !important;
+position:relative !important;
+z-index:999 !important;
+background:#fff !important;
+color:#000 !important;
+width:100% !important;
+padding:18px !important;
+margin-bottom:18px !important;
+border:none !important;
+border-radius:12px !important;
+font-size:20px !important;
+}
+
+.payment-label{
+display:block;
+margin:5px 0 10px;
+font-size:24px;
+font-weight:bold;
+color:#d4af37;
 }
 
 .delivery-form button{
@@ -247,6 +298,36 @@ color:white;
 margin-top:30px;
 font-size:22px;
 line-height:1.8;
+}
+
+.qr-image{
+width:300px;
+max-width:90%;
+border-radius:20px;
+border:5px solid #25d366;
+background:white;
+padding:10px;
+}
+
+.photos{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.photos img{
+width:100%;
+height:320px;
+object-fit:cover;
+border-radius:18px;
+border:1px solid #333;
+}
+
+iframe{
+width:100%;
+height:400px;
+border:0;
+border-radius:18px;
 }
 
 footer{
@@ -319,16 +400,20 @@ cursor:pointer;
 
 @media(max-width:768px){
 
+.bismillah-top{
+font-size:28px;
+}
+
 header h1{
 font-size:34px;
 }
 
 .hero h2{
-font-size:36px;
+font-size:34px;
 }
 
 .section-title{
-font-size:38px;
+font-size:36px;
 }
 
 .card h3{
@@ -343,20 +428,38 @@ font-size:24px;
 font-size:26px;
 }
 
+.cart-item{
+display:block;
+text-align:center;
+}
+
+.remove-btn{
+margin-top:10px;
+}
+
 }
 </style>
 </head>
 
 <body>
 
+<div class="bismillah-top">
+بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ
+</div>
+
 <header>
-<img src="logo.webp">
-<h1>Okinawa Halal Grill</h1>
+<img src="logo.webp" alt="Okinawa Halal Kitchen Logo">
+<h1>Okinawa Halal Kitchen</h1>
 <p>100% Halal Fast Food Takeout in Okinawa</p>
 </header>
 
 <div class="hero">
-<h2>🔥 Okinawa's Best Halal Fast Food</h2>
+<div class="badge">
+<div style="font-size:48px;">🚧 WEBSITE UNDER CONSTRUCTION 🚧</div>
+<div style="font-size:40px;direction:rtl;">🚧 الموقع قيد الإنشاء 🚧</div>
+</div>
+
+<h2>🔥 Okinawa's Best Halal Kitchen</h2>
 <p>Fresh Burgers • Biryani • Broast Chicken • Pulao • Fries • Drinks</p>
 
 <a class="whatsapp-btn"
@@ -373,110 +476,83 @@ target="_blank">
 <div class="menu-grid">
 
 <div class="card">
-<img src="zinger-burger.webp">
+<img loading="lazy" src="zinger-burger.webp">
 <div class="card-content">
 <h3>Zinger Burger</h3>
 <p class="price">¥650</p>
-<button class="add-cart-btn"
-onclick="addToCart('Zinger Burger',650)">
-🛒 Add Cart
-</button>
+<button class="add-cart-btn" onclick="addToCart('Zinger Burger',650)">🛒 Add Cart</button>
 </div>
 </div>
 
 <div class="card">
-<img src="chicken-burger.webp">
+<img loading="lazy" src="chicken-burger.webp">
 <div class="card-content">
 <h3>Chicken Burger</h3>
 <p class="price">¥500</p>
-<button class="add-cart-btn"
-onclick="addToCart('Chicken Burger',500)">
-🛒 Add Cart
-</button>
+<button class="add-cart-btn" onclick="addToCart('Chicken Burger',500)">🛒 Add Cart</button>
 </div>
 </div>
 
 <div class="card">
-<img src="double-burger.webp">
+<img loading="lazy" src="double-burger.webp">
 <div class="card-content">
 <h3>Double Burger</h3>
 <p class="price">¥800</p>
-<button class="add-cart-btn"
-onclick="addToCart('Double Burger',800)">
-🛒 Add Cart
-</button>
+<button class="add-cart-btn" onclick="addToCart('Double Burger',800)">🛒 Add Cart</button>
 </div>
 </div>
 
 <div class="card">
-<img src="broast-3pc.webp">
+<img loading="lazy" src="broast-3pc.webp">
 <div class="card-content">
 <h3>Broast Chicken</h3>
 <p class="price">¥1200</p>
-<button class="add-cart-btn"
-onclick="addToCart('Broast Chicken',1200)">
-🛒 Add Cart
-</button>
+<button class="add-cart-btn" onclick="addToCart('Broast Chicken',1200)">🛒 Add Cart</button>
 </div>
 </div>
 
 <div class="card">
-<img src="chicken-biryani.webp">
+<img loading="lazy" src="chicken-biryani.webp">
 <div class="card-content">
 <h3>Chicken Biryani</h3>
 <p class="price">¥1000</p>
-<button class="add-cart-btn"
-onclick="addToCart('Chicken Biryani',1000)">
-🛒 Add Cart
-</button>
+<button class="add-cart-btn" onclick="addToCart('Chicken Biryani',1000)">🛒 Add Cart</button>
 </div>
 </div>
 
 <div class="card">
-<img src="chicken-pulao.webp">
+<img loading="lazy" src="chicken-pulao.webp">
 <div class="card-content">
 <h3>Chicken Pulao</h3>
 <p class="price">¥900</p>
-<button class="add-cart-btn"
-onclick="addToCart('Chicken Pulao',900)">
-🛒 Add Cart
-</button>
+<button class="add-cart-btn" onclick="addToCart('Chicken Pulao',900)">🛒 Add Cart</button>
 </div>
 </div>
 
 <div class="card">
-<img src="mutton-biryani.webp">
+<img loading="lazy" src="mutton-biryani.webp">
 <div class="card-content">
 <h3>Mutton Biryani</h3>
 <p class="price">¥1300</p>
-<button class="add-cart-btn"
-onclick="addToCart('Mutton Biryani',1300)">
-🛒 Add Cart
-</button>
+<button class="add-cart-btn" onclick="addToCart('Mutton Biryani',1300)">🛒 Add Cart</button>
 </div>
 </div>
 
 <div class="card">
-<img src="potato.webp">
+<img loading="lazy" src="potato.webp">
 <div class="card-content">
 <h3>Potato</h3>
 <p class="price">¥250</p>
-<button class="add-cart-btn"
-onclick="addToCart('Potato',250)">
-🛒 Add Cart
-</button>
+<button class="add-cart-btn" onclick="addToCart('Potato',250)">🛒 Add Cart</button>
 </div>
 </div>
 
 <div class="card">
-<img src="cola.webp">
+<img loading="lazy" src="cola.webp">
 <div class="card-content">
 <h3>Cola</h3>
 <p class="price">¥200</p>
-<button class="add-cart-btn"
-onclick="addToCart('Cola',200)">
-🛒 Add Cart
-</button>
+<button class="add-cart-btn" onclick="addToCart('Cola',200)">🛒 Add Cart</button>
 </div>
 </div>
 
@@ -521,42 +597,32 @@ Final Bill:
 
 <input id="phone" type="text" placeholder="Phone Number">
 
-<textarea id="order"
-placeholder="Your Order"></textarea>
+<textarea id="order" placeholder="Your Order"></textarea>
 
 <select id="type" onchange="updateBill()">
 <option value="Pickup">Pickup</option>
 <option value="Delivery">Delivery + ¥300</option>
 </select>
 
-<select id="payment_method">
+<label class="payment-label" for="payment_method">
+💳 Payment Method
+</label>
 
+<select id="payment_method" name="payment_method">
 <option value="Cash">Cash</option>
-
 <option value="Debit Card">Debit Card</option>
-
 <option value="PayPay">PayPay</option>
-
 <option value="Credit Card">Credit Card</option>
-
 <option value="Rakuten Pay">Rakuten Pay</option>
-
 <option value="au PAY">au PAY</option>
-
 <option value="d払い">d払い</option>
-
 <option value="LINE Pay">LINE Pay</option>
-
 <option value="Merpay">Merpay</option>
-
 <option value="Apple Pay">Apple Pay</option>
-
 <option value="Google Pay">Google Pay</option>
-
 </select>
 
-<textarea id="address"
-placeholder="Delivery Address"></textarea>
+<textarea id="address" placeholder="Delivery Address"></textarea>
 
 <button onclick="sendDeliveryOrder()">
 Send Delivery Order
@@ -572,9 +638,7 @@ Send Delivery Order
 
 <div class="track-order-box">
 
-<input type="text"
-id="trackPhone"
-placeholder="Enter Your Phone Number">
+<input type="text" id="trackPhone" placeholder="Enter Your Phone Number">
 
 <button onclick="trackOrder()">
 Track Order
@@ -586,33 +650,62 @@ Track Order
 
 </section>
 
+<section>
+<h2 class="section-title">Connect With Our Bot</h2>
+
+<div style="text-align:center;">
+<a class="whatsapp-btn" href="https://wa.me/817084455348" target="_blank">📱 Connect on WhatsApp</a>
+<a class="whatsapp-btn" style="background:#06c755;" href="#">💬 LINE Coming Soon</a>
+</div>
+
+<div style="text-align:center;margin-top:40px;">
+<h3 style="color:#25d366;margin-bottom:20px;font-size:32px;">WhatsApp QR Code</h3>
+<img class="qr-image" src="https://api.qrserver.com/v1/create-qr-code/?size=280x280&data=https://wa.me/817084455348">
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Shop Photos</h2>
+
+<div class="photos">
+<img loading="lazy" src="outside.webp">
+<img loading="lazy" src="inside.webp">
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Location</h2>
+
+<iframe
+src="https://www.google.com/maps?q=Okinawa%20Halal%20Kitchen&output=embed"
+loading="lazy"
+allowfullscreen>
+</iframe>
+</section>
+
 <footer>
-© 2026 Okinawa Halal Grill
+© 2026 Okinawa Halal Kitchen
 </footer>
 
 <div id="chatBox">
 
 <div id="chatHeader">
-💬 Okinawa Halal Grill AI
+💬 Okinawa Halal Kitchen AI
 </div>
 
 <div id="chatMessages">
 <p><b>AI:</b> Hello! What would you like to order?</p>
 </div>
 
-<input id="chatInput"
-type="text"
-placeholder="Type your message...">
+<input id="chatInput" type="text" placeholder="Type your message...">
 
-<button id="chatSend"
-onclick="sendChat()">
+<button id="chatSend" onclick="sendChat()">
 Send
 </button>
 
 </div>
 
-<button id="chatButton"
-onclick="toggleChat()">
+<button id="chatButton" onclick="toggleChat()">
 💬 Chat
 </button>
 
@@ -714,19 +807,19 @@ document.getElementById("finalBill").innerText=
 function sendDeliveryOrder(){
 
 const name=
-document.getElementById("name").value;
+document.getElementById("name").value.trim();
 
 const phone=
-document.getElementById("phone").value;
+document.getElementById("phone").value.trim();
 
 const order=
-document.getElementById("order").value;
+document.getElementById("order").value.trim();
 
 const type=
 document.getElementById("type").value;
 
 const address=
-document.getElementById("address").value;
+document.getElementById("address").value.trim();
 
 const payment_method=
 document.getElementById("payment_method").value;
@@ -750,15 +843,13 @@ fetch(
 {
 method:"POST",
 
-headers:{
-"Content-Type":"application/json"
-},
+mode:"no-cors",
 
 body:JSON.stringify({
 
 name:name,
 
-phone:"+81"+phone.replace(/^0/,""),
+phone:phone,
 
 order:order,
 
@@ -801,7 +892,7 @@ alert("❌ Order Failed");
 async function trackOrder(){
 
 const phone=
-document.getElementById("trackPhone").value;
+document.getElementById("trackPhone").value.trim();
 
 const result=
 document.getElementById("trackingResult");
