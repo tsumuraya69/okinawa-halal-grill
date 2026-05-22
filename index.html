@@ -6,179 +6,155 @@
 <title>Okinawa Halal Grill</title>
 
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
 
 body{
-background:#000;
-color:#fff;
+  background:#000;
+  color:#fff;
 }
 
 .container{
-max-width:900px;
-margin:auto;
-padding:20px;
+  max-width:900px;
+  margin:auto;
+  padding:20px;
 }
 
 .logo{
-width:180px;
-display:block;
-margin:20px auto;
+  width:180px;
+  display:block;
+  margin:20px auto;
 }
 
 .hero{
-width:100%;
-border-radius:25px;
-margin-bottom:25px;
+  width:100%;
+  border-radius:25px;
+  margin-bottom:25px;
 }
 
 .section{
-background:#0a0a0a;
-border:1px solid #222;
-padding:30px;
-border-radius:25px;
-margin-bottom:30px;
+  background:#0a0a0a;
+  border:1px solid #222;
+  padding:30px;
+  border-radius:25px;
+  margin-bottom:30px;
 }
 
 .title{
-font-size:58px;
-text-align:center;
-font-weight:bold;
-color:#f1c232;
-margin-bottom:25px;
+  font-size:58px;
+  text-align:center;
+  font-weight:bold;
+  color:#f1c232;
+  margin-bottom:25px;
 }
 
 .subtitle{
-font-size:30px;
-text-align:center;
-margin-bottom:20px;
+  font-size:30px;
+  text-align:center;
+  margin-bottom:20px;
 }
 
 .menu-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-gap:20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:20px;
 }
 
 .menu-card{
-background:#111;
-padding:20px;
-border-radius:20px;
-text-align:center;
-border:1px solid #222;
+  background:#111;
+  padding:20px;
+  border-radius:20px;
+  text-align:center;
+  border:1px solid #222;
 }
 
 .menu-card img{
-width:100%;
-height:220px;
-object-fit:cover;
-border-radius:15px;
-margin-bottom:15px;
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border-radius:15px;
+  margin-bottom:15px;
 }
 
 .menu-name{
-font-size:28px;
-font-weight:bold;
-margin-bottom:10px;
+  font-size:28px;
+  font-weight:bold;
+  margin-bottom:10px;
 }
 
 .price{
-font-size:24px;
-color:#00d95f;
+  font-size:24px;
+  color:#00d95f;
 }
 
-input,
-select,
-textarea{
-width:100%;
-padding:22px;
-margin-bottom:20px;
-border:none;
-border-radius:18px;
-background:#666;
-color:#fff;
-font-size:26px;
+input,select,textarea{
+  width:100%;
+  padding:22px;
+  margin-bottom:20px;
+  border:none;
+  border-radius:18px;
+  background:#666;
+  color:#fff;
+  font-size:26px;
 }
 
 textarea{
-height:120px;
-resize:none;
+  height:120px;
+  resize:none;
 }
 
 button{
-width:100%;
-padding:24px;
-border:none;
-border-radius:20px;
-background:#00c853;
-color:#fff;
-font-size:34px;
-font-weight:bold;
-cursor:pointer;
+  width:100%;
+  padding:24px;
+  border:none;
+  border-radius:20px;
+  background:#00c853;
+  color:#fff;
+  font-size:34px;
+  font-weight:bold;
+  cursor:pointer;
 }
 
-button:hover{
-opacity:.9;
-}
+button:hover{opacity:.9}
 
 .track-result{
-margin-top:25px;
-font-size:26px;
-text-align:center;
+  margin-top:25px;
+  font-size:26px;
+  text-align:center;
 }
 
 .tracking-card{
-background:#111;
-padding:25px;
-border-radius:20px;
-border:1px solid #333;
-margin-top:20px;
-text-align:left;
+  background:#111;
+  padding:25px;
+  border-radius:20px;
+  border:1px solid #333;
+  margin-top:20px;
+  text-align:left;
 }
 
 .tracking-card p{
-margin-bottom:12px;
-font-size:24px;
+  margin-bottom:12px;
+  font-size:24px;
 }
 
 .chat-btn{
-position:fixed;
-right:20px;
-bottom:20px;
-background:#00c853;
-color:#fff;
-padding:20px 35px;
-border-radius:60px;
-font-size:30px;
-font-weight:bold;
-text-decoration:none;
-z-index:999;
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  background:#00c853;
+  color:#fff;
+  padding:20px 35px;
+  border-radius:60px;
+  font-size:30px;
+  font-weight:bold;
+  text-decoration:none;
+  z-index:999;
 }
 
 @media(max-width:768px){
-
-.title{
-font-size:42px;
+  .title{font-size:42px}
+  button{font-size:28px}
+  input,select,textarea{font-size:22px;padding:18px}
 }
-
-button{
-font-size:28px;
-}
-
-input,
-select,
-textarea{
-font-size:22px;
-padding:18px;
-}
-
-}
-
 </style>
 </head>
 
@@ -191,22 +167,12 @@ padding:18px;
 <img src="outside.webp" class="hero">
 
 <div class="section">
-
-<h1 class="title">
-🍔 Okinawa Halal Grill
-</h1>
-
-<p class="subtitle">
-100% Halal • Take Out Only
-</p>
-
+<h1 class="title">🍔 Okinawa Halal Grill</h1>
+<p class="subtitle">100% Halal • Take Out Only</p>
 </div>
 
 <div class="section">
-
-<h2 class="title">
-🔥 MENU
-</h2>
+<h2 class="title">🔥 MENU</h2>
 
 <div class="menu-grid">
 
@@ -247,19 +213,13 @@ padding:18px;
 </div>
 
 </div>
-
 </div>
 
 <div class="section">
-
-<h2 class="title">
-🚚 Delivery Order
-</h2>
+<h2 class="title">🚚 Delivery Order</h2>
 
 <input type="text" id="name" placeholder="Your Name">
-
 <input type="text" id="phone" placeholder="Phone Number">
-
 <textarea id="order" placeholder="Your Order"></textarea>
 
 <select id="type">
@@ -269,175 +229,113 @@ padding:18px;
 
 <textarea id="address" placeholder="Address"></textarea>
 
-<button onclick="sendOrder()">
-Send Delivery Order
-</button>
-
+<button onclick="sendOrder()">Send Delivery Order</button>
 </div>
 
 <div class="section">
+<h2 class="title">📦 Track My Order</h2>
 
-<h2 class="title">
-📦 Track My Order
-</h2>
+<input type="text" id="trackPhone" placeholder="Enter Your Phone Number">
 
-<input type="text"
-id="trackPhone"
-placeholder="Enter Your Phone Number">
+<button onclick="trackOrder()">Track Order</button>
 
-<button onclick="trackOrder()">
-Track Order
-</button>
-
-<div class="track-result" id="trackResult"></div>
-
+<div class="track-result" id="trackingResult"></div>
 </div>
 
 </div>
 
-<a href="https://wa.me/14155238886"
-class="chat-btn">
-💬 Chat
-</a>
+<a href="https://wa.me/14155238886" class="chat-btn">💬 Chat</a>
 
 <script>
-
 async function sendOrder(){
 
-const name=document.getElementById("name").value.trim();
+  const name=document.getElementById("name").value.trim();
+  const phone=document.getElementById("phone").value.trim();
+  const order=document.getElementById("order").value.trim();
+  const type=document.getElementById("type").value;
+  const address=document.getElementById("address").value.trim();
 
-const phone=document.getElementById("phone").value.trim();
+  if(!name || !phone || !order){
+    alert("❌ Fill all fields");
+    return;
+  }
 
-const order=document.getElementById("order").value.trim();
+  try{
+    await fetch("https://n8n.sakurajapanbot.tech/webhook/delivery-order",{
+      method:"POST",
+      mode:"no-cors",
+      body:JSON.stringify({
+        name:name,
+        phone:phone,
+        order:order,
+        type:type,
+        address:address
+      })
+    });
 
-const type=document.getElementById("type").value;
+    alert("✅ Order Sent Successfully!");
 
-const address=document.getElementById("address").value.trim();
+    document.getElementById("name").value="";
+    document.getElementById("phone").value="";
+    document.getElementById("order").value="";
+    document.getElementById("address").value="";
 
-if(!name || !phone || !order){
-
-alert("❌ Fill all fields");
-
-return;
-
-}
-
-try{
-
-await fetch(
-"https://n8n.sakurajapanbot.tech/webhook/delivery-order",
-{
-method:"POST",
-mode:"no-cors",
-headers:{
-"Content-Type":"application/json"
-},
-body:JSON.stringify({
-name,
-phone,
-order,
-type,
-address
-})
-}
-);
-
-alert("✅ Order Sent Successfully!");
-
-document.getElementById("name").value="";
-document.getElementById("phone").value="";
-document.getElementById("order").value="";
-document.getElementById("address").value="";
-
-}catch(error){
-
-console.error(error);
-
-alert("❌ Server Error");
-
-}
-
+  }catch(error){
+    console.error(error);
+    alert("❌ Server Error");
+  }
 }
 
 async function trackOrder(){
 
-const phone=document.getElementById("trackPhone").value.trim();
+  const phone=document.getElementById("trackPhone").value.trim();
+  const result=document.getElementById("trackingResult");
 
-const result=document.getElementById("trackResult");
+  if(!phone){
+    result.innerHTML="❌ Enter phone number";
+    return;
+  }
 
-if(!phone){
+  result.innerHTML="⏳ Tracking order...";
 
-result.innerHTML="❌ Enter phone number";
+  try{
+    const response=await fetch("https://n8n.sakurajapanbot.tech/webhook/track-order",{
+      method:"POST",
+      headers:{
+        "Content-Type":"application/json"
+      },
+      body:JSON.stringify({
+        phone:phone
+      })
+    });
 
-return;
+    const data=await response.json();
 
+    console.log(data);
+
+    if(!data || !data.order_id){
+      result.innerHTML="❌ Order not found.";
+      return;
+    }
+
+    result.innerHTML=`
+      <div class="tracking-card">
+        <h3 style="margin-bottom:20px;color:#00d95f;">✅ Order Found</h3>
+        <p><b>Order ID:</b> ${data.order_id || ""}</p>
+        <p><b>Status:</b> ${data.status || ""}</p>
+        <p><b>Order:</b> ${data.order || ""}</p>
+        <p><b>Type:</b> ${data.type || ""}</p>
+        <p><b>Estimated Time:</b> ${data.estimated_time || "15 min"}</p>
+        <p><b>Driver:</b> ${data.driver_name || "Waiting"}</p>
+        <p><b>Driver Phone:</b> ${data.driver_phone || "Waiting"}</p>
+      </div>
+    `;
+
+  }catch(error){
+    console.error(error);
+    result.innerHTML="❌ Server Error";
+  }
 }
-
-result.innerHTML="⏳ Tracking order...";
-
-try{
-
-const response=await fetch(
-"https://n8n.sakurajapanbot.tech/webhook/track-order",
-{
-method:"POST",
-headers:{
-"Content-Type":"application/json"
-},
-body:JSON.stringify({
-phone:phone
-})
-}
-);
-
-const data=await response.json();
-
-console.log(data);
-
-if(!data || !data.order_id){
-
-result.innerHTML="❌ Order not found.";
-
-return;
-
-}
-
-result.innerHTML=`
-
-<div class="tracking-card">
-
-<h3 style="margin-bottom:20px;color:#00d95f;">
-✅ Order Found
-</h3>
-
-<p><b>Order ID:</b> ${data.order_id}</p>
-
-<p><b>Status:</b> ${data.status}</p>
-
-<p><b>Order:</b> ${data.order}</p>
-
-<p><b>Type:</b> ${data.type}</p>
-
-<p><b>Estimated Time:</b> ${data.estimated_time}</p>
-
-<p><b>Driver:</b> ${data.driver_name}</p>
-
-<p><b>Driver Phone:</b> ${data.driver_phone}</p>
-
-</div>
-
-`;
-
-}catch(error){
-
-console.error(error);
-
-result.innerHTML="❌ Tracking system not ready.";
-
-}
-
-}
-
 </script>
 
 </body>
