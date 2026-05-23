@@ -80,6 +80,61 @@ section{max-width:1200px;margin:auto;padding:60px 20px;}
   margin-bottom:35px;
 }
 
+.profile-box{
+  max-width:1050px;
+  margin:auto;
+  background:linear-gradient(135deg,#111,#1b1b1b);
+  border:1px solid #333;
+  border-radius:25px;
+  padding:35px;
+  box-shadow:0 0 25px rgba(212,175,55,0.18);
+}
+
+.profile-badge{
+  display:inline-block;
+  background:#d4af37;
+  color:#000;
+  padding:14px 24px;
+  border-radius:50px;
+  font-size:20px;
+  font-weight:bold;
+  margin-bottom:25px;
+}
+
+.profile-text{
+  font-size:20px;
+  color:#eee;
+  line-height:1.9;
+  margin-bottom:18px;
+}
+
+.profile-info{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:18px;
+  margin-top:30px;
+}
+
+.info-card{
+  background:#0b0b0b;
+  border:1px solid #2a2a2a;
+  border-radius:18px;
+  padding:20px;
+  font-size:17px;
+  line-height:1.8;
+}
+
+.info-card b{
+  color:#d4af37;
+  font-size:20px;
+}
+
+.info-card a{
+  color:#25d366;
+  text-decoration:none;
+  word-break:break-word;
+}
+
 .menu-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
@@ -303,15 +358,12 @@ footer{
   .hero h2{font-size:34px;}
   .section-title{font-size:36px;}
   .card img{height:200px;}
-
   .badge div{font-size:26px!important;}
-
   .combo-btn,.whatsapp-order-btn,.line-order-btn,.uber-btn{
     display:block;
     width:95%;
     margin:12px auto;
   }
-
   #chatBox{width:90%;right:5%;bottom:85px;}
 }
 </style>
@@ -346,6 +398,56 @@ footer{
   href="https://www.ubereats.com/jp-en/region/okinawa"
   target="_blank">🛵 Order With Uber Eats</a>
 </div>
+
+<section id="about-profile">
+<h2 class="section-title">🌙 About Okinawa Halal Kitchen</h2>
+
+<div class="profile-box">
+
+<div class="profile-badge">
+Okinawa’s First 100% Halal Fast Food Kitchen
+</div>
+
+<p class="profile-text">
+Welcome to <b>Okinawa Halal Kitchen</b> — a new halal food spot created with love for the Muslim community, local families, tourists, and everyone who wants to enjoy fresh, clean, and delicious halal fast food in Okinawa.
+</p>
+
+<p class="profile-text">
+Located only about <b>3 km from Okinawa Mosque</b>, we are happy and thankful to bring a unique halal taste to Okinawa Main Island. Our menu includes <b>100% halal burgers, Arabic chicken rice, chicken broast, cakes, ice cream</b>, and many more special items prepared with care.
+</p>
+
+<p class="profile-text">
+Our taste is specially created with a worldwide flavor balance, so people from many countries and cultures can enjoy it easily. This unique taste is available only at <b>Okinawa Halal Kitchen</b>.
+</p>
+
+<div class="profile-info">
+
+<div class="info-card">
+<b>📍 Address</b><br>
+〒901-2416<br>
+沖縄県中頭郡中城村和宇慶633-2
+</div>
+
+<div class="info-card">
+<b>📞 Phone</b><br>
+<a href="tel:08098504545">080-9850-4545</a>
+</div>
+
+<div class="info-card">
+<b>📧 Email</b><br>
+<a href="mailto:okinawa.halal.kitchen@gmail.com">
+okinawa.halal.kitchen@gmail.com
+</a>
+</div>
+
+<div class="info-card">
+<b>🕌 Near Okinawa Mosque</b><br>
+About 3 km distance
+</div>
+
+</div>
+</div>
+</section>
 
 <section>
 <h2 class="section-title">Menu</h2>
@@ -431,7 +533,7 @@ footer{
 <h2 class="section-title">Location</h2>
 
 <iframe
-src="https://www.google.com/maps?q=Okinawa%20Halal%20Kitchen&output=embed"
+src="https://www.google.com/maps?q=Okinawa%20Halal%20Kitchen%20Nakagusuku&output=embed"
 loading="lazy"
 allowfullscreen>
 </iframe>
