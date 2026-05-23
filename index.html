@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>沖縄ハラルキッチン | Okinawa Halal Kitchen</title>
 
-<meta name="description" content="沖縄ハラルキッチンは沖縄県中城村にオープン予定の100%ハラルファストフード店です。Okinawa Halal Kitchen offers 100% halal fast food in Okinawa.">
-<meta name="keywords" content="沖縄 ハラル, 沖縄 ハラルフード, 沖縄 ハラルキッチン, Okinawa Halal Kitchen, halal food Okinawa, halal burger Okinawa">
+<meta name="description" content="沖縄ハラルキッチンは沖縄県中城村の100%ハラルファストフード店です。Okinawa Halal Kitchen offers 100% halal fast food in Okinawa.">
+<meta name="keywords" content="沖縄 ハラル, 沖縄 ハラルフード, 沖縄 ハラルキッチン, halal food Okinawa, Okinawa Halal Kitchen">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
-body{background:#000;color:#fff;font-family:Arial,"Yu Gothic",sans-serif;line-height:1.7}
+body{background:#000;color:#fff;font-family:Arial,"Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif;line-height:1.7}
 .bismillah{color:#d4af37;font-size:38px;text-align:center;padding:25px 10px 10px;font-family:"Times New Roman",serif}
 .lang{text-align:center;background:#0b0b0b;padding:12px}
 .lang button{background:#d4af37;color:#000;border:none;border-radius:30px;padding:10px 20px;margin:5px;font-weight:bold;cursor:pointer}
@@ -22,7 +22,7 @@ header p{color:#ccc}
 .badge{display:inline-block;background:#d4af37;color:#000;padding:20px 30px;border-radius:18px;font-weight:bold;box-shadow:0 0 25px #d4af37;margin-bottom:25px}
 .countdown{margin-top:18px;background:#fff;color:#000;padding:15px;border-radius:15px;font-size:28px;font-weight:bold}
 .hero h2{font-size:44px;color:#d4af37;margin:20px 0}
-.hero p{max-width:800px;margin:auto;color:#ddd;font-size:18px}
+.hero p{max-width:850px;margin:auto;color:#ddd;font-size:18px}
 .btn{display:inline-block;text-decoration:none;color:#fff;background:#25d366;padding:15px 25px;border-radius:12px;margin:10px;font-weight:bold;font-size:19px}
 .uber{background:#000;border:2px solid #25d366}
 section{max-width:1200px;margin:auto;padding:60px 20px}
@@ -43,6 +43,7 @@ section{max-width:1200px;margin:auto;padding:60px 20px}
 .card img{width:100%;height:230px;object-fit:cover}
 .card h3{color:#d4af37;font-size:23px;margin:15px 5px}
 .price{font-size:22px;font-weight:bold;padding-bottom:18px}
+.add-btn{background:#25d366;color:#fff;border:none;border-radius:10px;padding:12px 18px;margin-bottom:18px;font-weight:bold;cursor:pointer}
 .form,.track-box{max-width:720px;margin:auto;background:#111;border:1px solid #333;border-radius:18px;padding:30px}
 input,textarea,select{width:100%;padding:16px;margin:12px 0;border:none;border-radius:10px;font-size:16px}
 button{width:100%;background:#25d366;color:#fff;padding:18px;border:none;border-radius:10px;font-size:20px;font-weight:bold;cursor:pointer}
@@ -52,13 +53,18 @@ button{width:100%;background:#25d366;color:#fff;padding:18px;border:none;border-
 iframe{width:100%;height:400px;border:0;border-radius:18px}
 footer{text-align:center;background:#111;color:#aaa;padding:25px;margin-top:50px}
 #chatButton{position:fixed;bottom:20px;right:20px;background:#25d366;color:#fff;border:none;width:auto;padding:15px 22px;border-radius:50px;z-index:9999}
-#chatBox{display:none;position:fixed;bottom:90px;right:20px;width:320px;max-width:90%;background:#111;border:2px solid #d4af37;border-radius:15px;overflow:hidden;z-index:9999}
+#chatBox{display:none;position:fixed;bottom:90px;right:20px;width:340px;max-width:90%;background:#111;border:2px solid #d4af37;border-radius:15px;overflow:hidden;z-index:9999}
 #chatHeader{background:#d4af37;color:#000;padding:12px;text-align:center;font-weight:bold}
-#chatMessages{height:200px;overflow:auto;padding:12px;font-size:14px}
+#chatMessages{height:240px;overflow:auto;padding:12px;font-size:14px}
 #chatInput{margin:0;border-radius:0}
 #chatBox button{border-radius:0}
+.bot-welcome{position:fixed;bottom:95px;left:20px;background:#111;border:2px solid #d4af37;border-radius:18px;padding:18px;max-width:360px;z-index:9998;box-shadow:0 0 25px rgba(212,175,55,.35)}
+.bot-welcome h3{color:#d4af37;margin-bottom:8px}
+.bot-welcome p{font-size:15px;color:#eee}
+.bot-welcome a{display:block;text-align:center;margin-top:12px;background:#25d366;color:#fff;padding:12px;border-radius:10px;text-decoration:none;font-weight:bold}
+.close-welcome{position:absolute;top:6px;right:10px;cursor:pointer;color:#fff;font-weight:bold}
 @media(max-width:768px){
-.bismillah{font-size:28px}.hero h2,.section-title{font-size:32px}.badge div{font-size:25px!important}.profile-text{font-size:17px}.btn{display:block}.card img{height:200px}
+.bismillah{font-size:28px}.hero h2,.section-title{font-size:32px}.badge div{font-size:25px!important}.profile-text{font-size:17px}.btn{display:block}.card img{height:200px}.bot-welcome{left:10px;right:10px;max-width:none}
 }
 </style>
 </head>
@@ -90,7 +96,7 @@ footer{text-align:center;background:#111;color:#aaa;padding:25px;margin-top:50px
 <p data-ja="ハラルバーガー、アラビックチキンライス、チキンブロースト、ケーキ、アイスクリームなどを沖縄でお届けします。"
 data-en="Fresh halal burgers, Arabic chicken rice, chicken broast, cakes, ice cream and more in Okinawa."></p>
 
-<a class="btn" href="https://wa.me/817084455348" target="_blank" data-ja="📱 WhatsAppで注文" data-en="📱 Order on WhatsApp"></a>
+<a id="mainOrderBot" class="btn" href="#" target="_blank"></a>
 <a class="btn uber" href="https://www.ubereats.com/jp-en/region/okinawa" target="_blank" data-ja="🛵 Uber Eatsで注文" data-en="🛵 Order With Uber Eats"></a>
 </div>
 
@@ -99,7 +105,7 @@ data-en="Fresh halal burgers, Arabic chicken rice, chicken broast, cakes, ice cr
 <div class="quick-grid">
 <a class="quick-btn q1" href="https://www.ubereats.com/jp-en/region/okinawa" target="_blank">🛵 Uber Eats</a>
 <a class="quick-btn q2" href="#menu">🍔 Menu</a>
-<a class="quick-btn q3" href="https://wa.me/817084455348" target="_blank">📱 WhatsApp</a>
+<a id="quickOrderBot" class="quick-btn q3" href="#" target="_blank">Order Bot</a>
 <a class="quick-btn q4" href="https://maps.google.com/?q=Okinawa+Halal+Kitchen" target="_blank">📍 Google Maps</a>
 <a class="quick-btn q5" href="tel:08098504545">📞 Call</a>
 <a class="quick-btn q6" href="https://instagram.com/" target="_blank">📸 Instagram</a>
@@ -133,15 +139,15 @@ data-en="Our flavor is carefully balanced with international taste standards, so
 <section id="menu">
 <h2 class="section-title" data-ja="メニュー" data-en="Menu"></h2>
 <div class="menu-grid">
-<div class="card"><img src="zinger-burger.webp"><h3>ジンガーバーガー<br>Zinger Burger</h3><p class="price">¥650</p></div>
-<div class="card"><img src="chicken-burger.webp"><h3>チキンバーガー<br>Chicken Burger</h3><p class="price">¥500</p></div>
-<div class="card"><img src="double-burger.webp"><h3>ダブルバーガー<br>Double Burger</h3><p class="price">¥800</p></div>
-<div class="card"><img src="broast-3pc.webp"><h3>チキンブロースト<br>Broast Chicken</h3><p class="price">¥1200</p></div>
-<div class="card"><img src="chicken-biryani.webp"><h3>チキンビリヤニ<br>Chicken Biryani</h3><p class="price">¥1000</p></div>
-<div class="card"><img src="chicken-pulao.webp"><h3>チキンプラオ<br>Chicken Pulao</h3><p class="price">¥900</p></div>
-<div class="card"><img src="mutton-biryani.webp"><h3>マトンビリヤニ<br>Mutton Biryani</h3><p class="price">¥1300</p></div>
-<div class="card"><img src="potato.webp"><h3>ポテト<br>Potato</h3><p class="price">¥250</p></div>
-<div class="card"><img src="cola.webp"><h3>コーラ<br>Cola</h3><p class="price">¥200</p></div>
+<div class="card"><img src="zinger-burger.webp"><h3>ジンガーバーガー<br>Zinger Burger</h3><p class="price">¥650</p><button class="add-btn" onclick="quickOrder('Zinger Burger')">Order</button></div>
+<div class="card"><img src="chicken-burger.webp"><h3>チキンバーガー<br>Chicken Burger</h3><p class="price">¥500</p><button class="add-btn" onclick="quickOrder('Chicken Burger')">Order</button></div>
+<div class="card"><img src="double-burger.webp"><h3>ダブルバーガー<br>Double Burger</h3><p class="price">¥800</p><button class="add-btn" onclick="quickOrder('Double Burger')">Order</button></div>
+<div class="card"><img src="broast-3pc.webp"><h3>チキンブロースト<br>Broast Chicken</h3><p class="price">¥1200</p><button class="add-btn" onclick="quickOrder('Broast Chicken')">Order</button></div>
+<div class="card"><img src="chicken-biryani.webp"><h3>チキンビリヤニ<br>Chicken Biryani</h3><p class="price">¥1000</p><button class="add-btn" onclick="quickOrder('Chicken Biryani')">Order</button></div>
+<div class="card"><img src="chicken-pulao.webp"><h3>チキンプラオ<br>Chicken Pulao</h3><p class="price">¥900</p><button class="add-btn" onclick="quickOrder('Chicken Pulao')">Order</button></div>
+<div class="card"><img src="mutton-biryani.webp"><h3>マトンビリヤニ<br>Mutton Biryani</h3><p class="price">¥1300</p><button class="add-btn" onclick="quickOrder('Mutton Biryani')">Order</button></div>
+<div class="card"><img src="potato.webp"><h3>ポテト<br>Potato</h3><p class="price">¥250</p><button class="add-btn" onclick="quickOrder('Potato')">Order</button></div>
+<div class="card"><img src="cola.webp"><h3>コーラ<br>Cola</h3><p class="price">¥200</p><button class="add-btn" onclick="quickOrder('Cola')">Order</button></div>
 </div>
 </section>
 
@@ -185,21 +191,35 @@ data-en="Our flavor is carefully balanced with international taste standards, so
 
 <footer>© 2026 Okinawa Halal Kitchen. All Rights Reserved.</footer>
 
+<div class="bot-welcome" id="botWelcome">
+<span class="close-welcome" onclick="closeWelcome()">×</span>
+<h3 id="welcomeTitle"></h3>
+<p id="welcomeText"></p>
+<a id="welcomeBotBtn" href="#" target="_blank"></a>
+</div>
+
 <div id="chatBox">
 <div id="chatHeader">💬 Okinawa Halal Kitchen AI</div>
-<div id="chatMessages"><p><b>AI:</b> Hello! What would you like to order?</p></div>
+<div id="chatMessages"></div>
 <input id="chatInput" placeholder="Type your message...">
 <button onclick="sendChat()">Send</button>
 </div>
 <button id="chatButton" onclick="toggleChat()">💬 Chat</button>
 
 <script>
+const WHATSAPP_BOT_URL="https://wa.me/817084455348";
+const LINE_BOT_URL="https://line.me/R/ti/p/@YOUR_LINE_ID";
+let currentLang="ja";
+
 function setLang(lang){
+currentLang=lang;
 document.documentElement.lang=lang;
 localStorage.setItem("siteLang",lang);
 document.querySelectorAll("[data-ja]").forEach(el=>{
 el.innerHTML=el.getAttribute("data-"+lang);
 });
+updateBotButtons();
+updateWelcomeText();
 }
 
 function autoLang(){
@@ -208,7 +228,59 @@ if(saved){setLang(saved);return;}
 const browserLang=navigator.language || navigator.userLanguage;
 setLang(browserLang.toLowerCase().startsWith("ja") ? "ja" : "en");
 }
-autoLang();
+
+function botUrl(){
+return currentLang==="ja" ? LINE_BOT_URL : WHATSAPP_BOT_URL;
+}
+
+function updateBotButtons(){
+const main=document.getElementById("mainOrderBot");
+const quick=document.getElementById("quickOrderBot");
+if(currentLang==="ja"){
+main.href=LINE_BOT_URL;
+main.innerHTML="💬 LINEで注文する";
+quick.href=LINE_BOT_URL;
+quick.innerHTML="💬 LINE注文";
+}else{
+main.href=WHATSAPP_BOT_URL;
+main.innerHTML="📱 Order on WhatsApp";
+quick.href=WHATSAPP_BOT_URL;
+quick.innerHTML="📱 WhatsApp";
+}
+}
+
+function updateWelcomeText(){
+const title=document.getElementById("welcomeTitle");
+const text=document.getElementById("welcomeText");
+const btn=document.getElementById("welcomeBotBtn");
+const chat=document.getElementById("chatMessages");
+
+if(currentLang==="ja"){
+title.innerHTML="👋 沖縄ハラルキッチンへようこそ";
+text.innerHTML="ご注文はLINEボットから簡単にできます。メニューを見て、食べたい商品をすぐに注文してください。";
+btn.innerHTML="💬 LINEで注文する";
+btn.href=LINE_BOT_URL;
+chat.innerHTML="<p><b>AI:</b> いらっしゃいませ。ご注文はLINEボットから簡単にできます。メニューを選んでください。</p>";
+}else{
+title.innerHTML="👋 Welcome to Okinawa Halal Kitchen";
+text.innerHTML="Please give me your order. You can quickly order your favorite food through our WhatsApp bot.";
+btn.innerHTML="📱 Order on WhatsApp";
+btn.href=WHATSAPP_BOT_URL;
+chat.innerHTML="<p><b>AI:</b> Welcome! Please give me your order. You can order quickly from our menu through WhatsApp.</p>";
+}
+}
+
+function closeWelcome(){
+document.getElementById("botWelcome").style.display="none";
+}
+
+function quickOrder(item){
+const message=currentLang==="ja"
+? "こんにちは。"+item+"を注文したいです。"
+: "Hello, I want to order "+item+".";
+const url=botUrl()+"?text="+encodeURIComponent(message);
+window.open(url,"_blank");
+}
 
 function startCountdown(){
 const openingDate=new Date("June 30, 2026 00:00:00").getTime();
@@ -223,7 +295,6 @@ const seconds=Math.floor((d%(1000*60))/1000);
 document.getElementById("countdown").innerHTML=days+"d : "+hours+"h : "+minutes+"m : "+seconds+"s";
 },1000);
 }
-startCountdown();
 
 function toggleChat(){
 const box=document.getElementById("chatBox");
@@ -236,7 +307,11 @@ const messages=document.getElementById("chatMessages");
 const text=input.value.trim();
 if(!text)return;
 messages.innerHTML+=`<p><b>You:</b> ${text}</p>`;
-messages.innerHTML+=`<p><b>AI:</b> Thank you! Please send your order by WhatsApp or the order form.</p>`;
+if(currentLang==="ja"){
+messages.innerHTML+=`<p><b>AI:</b> ご注文ありがとうございます。LINEボットでメニュー注文できます。</p>`;
+}else{
+messages.innerHTML+=`<p><b>AI:</b> Thank you! Please give me your order through WhatsApp bot.</p>`;
+}
 input.value="";
 messages.scrollTop=messages.scrollHeight;
 }
@@ -256,9 +331,12 @@ return;
 fetch("https://n8n.sakurajapanbot.tech/webhook/delivery-order",{
 method:"POST",
 headers:{"Content-Type":"application/json"},
-body:JSON.stringify({name,phone,order,type,address})
+body:JSON.stringify({name,phone,order,type,address,language:currentLang})
 })
-.then(()=>alert("Order Sent Successfully!"))
+.then(()=>{
+alert(currentLang==="ja" ? "注文を送信しました。" : "Order Sent Successfully!");
+window.open(botUrl(),"_blank");
+})
 .catch(()=>alert("Order Failed. Try again."));
 }
 
@@ -291,6 +369,10 @@ result.innerHTML=`
 result.innerHTML="❌ Order not found or tracking system is not ready.";
 }
 }
+
+autoLang();
+startCountdown();
+setTimeout(()=>{document.getElementById("botWelcome").style.display="block";},800);
 </script>
 
 </body>
